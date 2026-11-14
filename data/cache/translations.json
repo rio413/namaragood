@@ -439,5 +439,176 @@
     ],
     "model": "claude-opus-5-5 (first pass in chat, 14 Nov)",
     "at": "2026-11-14T09:30:00.000Z"
+  },
+  "1b470406161006e1": {
+    "en": [
+      "Your stomach won't be happy, but your taste buds will."
+    ],
+    "ko": [
+      "배는 좀 힘들어하겠지만, 입은 아주 행복할 거예요."
+    ],
+    "zh": [
+      "肚子可能会有点抗议,但嘴巴绝对会很满足。"
+    ],
+    "th": [
+      "ท้องอาจจะไม่ค่อยแฮปปี้ แต่ลิ้นคุณฮัปปี้แน่นอน"
+    ],
+    "vi": [
+      "Bụng bạn có thể sẽ không vui lắm, nhưng vị giác thì chắc chắn sẽ sướng."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:22:51.312Z"
+  },
+  "d9cd39a1e7ce38f9": {
+    "en": [
+      "Sometimes, I just miss a proper pint of Guinness."
+    ],
+    "ko": [
+      "가끔은 제대로 된 기네스 한 파인트가 그리울 때가 있어요."
+    ],
+    "zh": [
+      "有时候,我就是特别想喝一杯正宗的健力士黑啤。"
+    ],
+    "th": [
+      "บางทีผมก็คิดถึงกินเนสส์สักแก้วแบบเต็มไพนต์ที่ทำมาถูกต้องจริงๆ"
+    ],
+    "vi": [
+      "Đôi khi mình chỉ thèm một pint Guinness đúng chuẩn thôi."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:22:53.896Z"
+  },
+  "d39b731df9ab5f84": {
+    "en": [
+      "Just don't plan on kissing anyone afterwards. You've been warned."
+    ],
+    "ko": [
+      "먹고 나서 누구랑 키스할 계획은 접어두세요. 경고했어요."
+    ],
+    "zh": [
+      "吃完可别指望跟谁亲亲抱抱了,我可是提醒过你了。"
+    ],
+    "th": [
+      "แต่กินเสร็จก็อย่าหวังว่าจะได้จูบใครนะครับ เตือนแล้วนะ"
+    ],
+    "vi": [
+      "Chỉ là ăn xong đừng có tính hôn ai nhé. Mình cảnh báo rồi đấy."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:22:56.298Z"
+  },
+  "47ebcbd9398b32a1": {
+    "en": [
+      "Definitely not your usual bar snacks."
+    ],
+    "ko": [
+      "보통 바에서 나오는 안주랑은 완전 달라요."
+    ],
+    "zh": [
+      "绝对不是你常见的那种酒吧小食。"
+    ],
+    "th": [
+      "ไม่ใช่กับแกล้มบาร์ธรรมดาแน่นอนครับ"
+    ],
+    "vi": [
+      "Chắc chắn không phải kiểu đồ nhắm quen thuộc ở quán bar đâu."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:22:58.477Z"
+  },
+  "39a0fca390c0c76d": {
+    "en": [
+      "Sometimes you've got to take a few risks in life for good food."
+    ],
+    "ko": [
+      "살다 보면 맛있는 걸 먹으려고 가끔은 모험도 해봐야 해요."
+    ],
+    "zh": [
+      "人生嘛,为了吃到好吃的,有时候就得冒点险。"
+    ],
+    "th": [
+      "ชีวิตเรานี่นะ บางทีก็ต้องเสี่ยงบ้างเพื่อให้ได้กินของอร่อยครับ"
+    ],
+    "vi": [
+      "Đời mà, đôi khi vì một bữa ngon thì cũng phải liều một chút bạn ạ."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:23:00.999Z"
+  },
+  "3c418f9c237cb422": {
+    "en": [
+      "Good sandwiches, good coffee and an excuse for a walk along the river."
+    ],
+    "ko": [
+      "샌드위치도 맛있고 커피도 좋아요. 게다가 강가를 따라 산책할 핑계까지 생겨요."
+    ],
+    "zh": [
+      "三明治好吃,咖啡也不错,还正好有个理由沿着河边散散步。"
+    ],
+    "th": [
+      "แซนด์วิชอร่อย กาแฟก็ดี แถมมีข้ออ้างให้เดินเล่นริมแม่น้ำด้วยครับ"
+    ],
+    "vi": [
+      "Bánh sandwich ngon, cà phê cũng ngon, lại còn có cớ để đi dạo dọc bờ sông nữa."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:23:03.880Z"
+  },
+  "17b6a57022313331": {
+    "en": [
+      "Hands down the best ramen I had in 2025."
+    ],
+    "ko": [
+      "2025년에 먹은 라멘 중에 단연 최고예요."
+    ],
+    "zh": [
+      "2025年我吃过的拉面里,毫无疑问是最好吃的一碗。"
+    ],
+    "th": [
+      "ราเมนที่ผมกินในปี 2025 อร่อยที่สุดแบบไม่มีข้อกังขาเลยครับ"
+    ],
+    "vi": [
+      "Tô ramen ngon nhất mình ăn trong năm 2025, không có đối thủ luôn."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:23:06.108Z"
+  },
+  "b8cf2032d337d8dc": {
+    "en": [
+      "Apparently, VOCCI is named after the owner's cat."
+    ],
+    "ko": [
+      "듣기로는 VOCCI라는 이름이 사장님네 고양이 이름에서 따온 거래요."
+    ],
+    "zh": [
+      "听说 VOCCI 这个名字是照着老板家的猫取的。"
+    ],
+    "th": [
+      "ได้ยินมาว่าชื่อ VOCCI ตั้งตามชื่อแมวของเจ้าของร้านครับ"
+    ],
+    "vi": [
+      "Nghe nói tên VOCCI được đặt theo tên con mèo của chủ quán đấy."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:23:08.421Z"
+  },
+  "20a62eb1cce7e4fa": {
+    "en": [
+      "Come hungry. Seriously."
+    ],
+    "ko": [
+      "배고픈 상태로 가세요. 진짜로요."
+    ],
+    "zh": [
+      "空着肚子去,别吃饱了再去。说真的。"
+    ],
+    "th": [
+      "ไปตอนหิวๆ เลยนะครับ จริงๆ"
+    ],
+    "vi": [
+      "Nhớ đi lúc đói bụng nhé. Mình nói thật đấy."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-14T12:23:10.442Z"
   }
 }
