@@ -1,0 +1,58 @@
+---
+// Every page of the site, in every language:
+//   /            /ko/  /zh/  /th/  /vi/          the list (and map)
+//   /p/<slug>/   /ko/p/<slug>/ …                  one place
+//   /about/      /ko/about/ …                     about
+import Base from '../layouts/Base.astro';
+import ListPage from '../components/ListPage.astro';
+import PlacePage from '../components/PlacePage.astro';
+import AboutPage from '../components/AboutPage.astro';
+import { LANGS, PLACES, UI, SITE, href, textIn, stripTags, tag } from '../lib/site.js';
+
+export function getStaticPaths() {
+  const out = [];
+  for (const l of LANGS) {
+    const pre = l.path ? l.path + '/' : '';
+    out.push({ params: { path: l.path || undefined }, props: { lang: l.code, kind: 'home' } });
+    out.push({ params: { path: `${pre}about` }, props: { lang: l.code, kind: 'about' } });
+    for (const pl of PLACES) out.push({ params: { path: `${pre}p/${pl.slug}` }, props: { lang: l.code, kind: 'place', place: pl } });
+  }
+  return out;
+}
+
+const { lang, kind, place } = Astro.props;
+const u = UI[lang];
+let title = u.title, description = u.metaDesc, jsonld = [];
+const author = { '@type': 'Person', name: 'Ryoma', description: 'Born and raised in Hokkaido, lives in Sapporo' };
+
+if (kind === 'home') {
+  jsonld = [
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: 'NAMARA GOOD', url: SITE + '/', inLanguage: lang },
+    { '@context': 'https://schema.org', '@type': 'ItemList', name: u.theList, numberOfItems: PLACES.length,
+      itemListElement: PLACES.map((pl, i) => ({ '@type': 'ListItem', position: i + 1, url: SITE + href(lang, 'place', pl.slug), name: pl.name })) },
+  ];
+}
+if (kind === 'place') {
+  const note = textIn(place.note, lang).paras.map(stripTags);
+  const what = (place.specs.length ? place.specs : place.types).slice(0, 2).map(t => tag(t, lang)).join(', ');
+  title = `${place.name}${place.nameJa && place.nameJa !== place.name ? ` (${place.nameJa})` : ''} · ${what} · ${tag(place.area, lang) || 'Sapporo'} | NAMARA GOOD`;
+  description = note.join(' ').slice(0, 155).replace(/\s+\S*$/, '') + '…';
+  const isStay = place.types.includes('Stay') && place.types.length === 1;
+  jsonld = [{
+    '@context': 'https://schema.org',
+    '@type': isStay ? 'LodgingBusiness' : place.types.includes('Bar') && !place.types.includes('Restaurant') ? 'BarOrPub' : place.types.includes('Café') ? 'CafeOrCoffeeShop' : 'Restaurant',
+    name: place.name, alternateName: place.nameJa || undefined,
+    servesCuisine: place.specs.length ? place.specs : undefined,
+    address: { '@type': 'PostalAddress', addressLocality: place.city || 'Sapporo', addressRegion: 'Hokkaido', addressCountry: 'JP', streetAddress: place.addressJa || undefined },
+    geo: place.lat ? { '@type': 'GeoCoordinates', latitude: place.lat, longitude: place.lng } : undefined,
+    hasMap: place.mapsUrl || undefined,
+    review: { '@type': 'Review', author, reviewBody: note.join('\n\n'), inLanguage: lang, datePublished: (place.lastChecked || place.edited || '').slice(0, 10) || undefined },
+  }];
+}
+if (kind === 'about') { title = `${u.aboutTitle} | NAMARA GOOD`; description = stripTags(u.aboutBody[0] + ' ' + u.aboutBody[1]); }
+---
+<Base lang={lang} kind={kind} slug={place?.slug} title={title} description={description} jsonld={jsonld}>
+  {kind === 'home' && <ListPage lang={lang} />}
+  {kind === 'place' && <PlacePage lang={lang} place={place} />}
+  {kind === 'about' && <AboutPage lang={lang} />}
+</Base>

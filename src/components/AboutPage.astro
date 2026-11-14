@@ -1,0 +1,10 @@
+---
+import { UI, href } from '../lib/site.js';
+const { lang } = Astro.props;
+const u = UI[lang];
+---
+<section class="top"><div class="wrap" style="padding-bottom:26px"><a class="m" href={href(lang)} style="font-size:12px;text-decoration:none">← {u.back}</a></div></section>
+<div class="wrap prose">
+  <h1 class="d">{u.aboutTitle}</h1>
+  {u.aboutBody.map(para => <p set:html={para} />)}
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "namaragood",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "NAMARA GOOD — a local's no-nonsense guide to eating and drinking in Sapporo.",
+  "scripts": {
+    "data": "node scripts/fetch-notion.mjs && node scripts/enrich-places.mjs && node scripts/translate.mjs && node scripts/build-data.mjs",
+    "data:sample": "node scripts/build-data.mjs --sample",
+    "check-changes": "node scripts/check-changes.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "@astrojs/sitemap": "3.7.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

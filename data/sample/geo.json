@@ -1,0 +1,57 @@
+{
+  "_note": "ROUGH TEST PINS for local sample builds only. Real builds use Google Places (data/cache/geo.json).",
+  "41718244-8f65-8176-8523-f8ba403c15d8": {
+    "placeId": null,
+    "lat": 43.0535,
+    "lng": 141.3508,
+    "addressJa": ""
+  },
+  "41718244-8f65-8132-a9d0-f74a0fe8c257": {
+    "placeId": null,
+    "lat": 43.059,
+    "lng": 141.3509,
+    "addressJa": ""
+  },
+  "41718244-8f65-81fd-adb8-cb9a055ed5dd": {
+    "placeId": null,
+    "lat": 43.0563,
+    "lng": 141.3517,
+    "addressJa": ""
+  },
+  "41718244-8f65-8130-96ab-ccbf700f111c": {
+    "placeId": null,
+    "lat": 43.0577,
+    "lng": 141.3553,
+    "addressJa": ""
+  },
+  "41718244-8f65-81d8-96ae-e30ab1c5da79": {
+    "placeId": null,
+    "lat": 43.0542,
+    "lng": 141.3526,
+    "addressJa": ""
+  },
+  "41718244-8f65-81c2-8d72-fe443eee13e1": {
+    "placeId": null,
+    "lat": 43.058,
+    "lng": 141.3752,
+    "addressJa": ""
+  },
+  "41718244-8f65-811a-a122-ecf26f095052": {
+    "placeId": null,
+    "lat": 43.057,
+    "lng": 141.3535,
+    "addressJa": ""
+  },
+  "41718244-8f65-8185-b6a2-dbff89fa2481": {
+    "placeId": null,
+    "lat": 43.0535,
+    "lng": 141.3508,
+    "addressJa": ""
+  },
+  "41718244-8f65-81eb-8e4e-c60d01a0d8af": {
+    "placeId": null,
+    "lat": 43.059,
+    "lng": 141.3509,
+    "addressJa": ""
+  }
+}

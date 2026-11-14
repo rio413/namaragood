@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import { LANGS, UI, langByCode, href, SITE } from '../lib/site.js';
+
+const { lang, kind = 'home', slug = '', title, description, jsonld = [], ogImage = '/og.png' } = Astro.props;
+const L = langByCode[lang];
+const u = UI[lang];
+const url = (l) => SITE + href(l, kind, slug);
+const fonts = {
+  en: '', ko: '&family=Noto+Sans+KR:wght@500;700;900', zh: '&family=Noto+Sans+SC:wght@500;700;900',
+  th: '&family=Noto+Sans+Thai:wght@500;700;900', vi: '',
+}[lang];
+---
+<!doctype html>
+<html lang={L.html}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={url(lang)}>
+  {LANGS.map(l => <link rel="alternate" hreflang={l.html} href={url(l.code)}>)}
+  <link rel="alternate" hreflang="x-default" href={url('en')}>
+  <meta property="og:type" content={kind === 'place' ? 'article' : 'website'}>
+  <meta property="og:site_name" content="NAMARA GOOD">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={url(lang)}>
+  <meta property="og:image" content={SITE + ogImage}>
+  <meta property="og:locale" content={L.og}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Noto+Sans+JP:wght@700;900${fonts}&display=swap`}>
+  {jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+</head>
+<body data-lang={lang}>
+  <header class="top">
+    <div class="wrap bar">
+      {kind === 'home'
+        ? <span class="brand d" aria-hidden="true">Sapporo</span>
+        : <a class="brand d" href={href(lang)}>Namara <span class="ol">Good.</span></a>}
+      <nav class="langs m" aria-label="Language">
+        {LANGS.map(l => <a href={href(l.code, kind, slug)} hreflang={l.html} lang={l.html} aria-current={l.code === lang ? 'true' : undefined} data-setlang={l.code} title={l.label}>{l.short}</a>)}
+      </nav>
+    </div>
+  </header>
+  {lang === 'en' && kind === 'home' && (
+    <div class="langhint" id="langhint" hidden>
+      <div class="wrap m"><a id="langhintLink" href="/"></a><button type="button" id="langhintClose" aria-label="Close">×</button></div>
+    </div>
+  )}
+  <main><slot /></main>
+  <footer class="foot">
+    <div class="wrap m">
+      <span>{u.footer}</span>
+      <span><a href={href(lang, 'about')}>{u.about}</a> · © {new Date().getFullYear()} Namara Good</span>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script>
+    import '../scripts/app.js';
+  </script>
+</body>
+</html>

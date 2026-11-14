@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+# Generated on every build from Notion. Caches in data/cache/ ARE committed.
+data/notion.json
+data/places.json
+public/photos/

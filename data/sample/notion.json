@@ -1,0 +1,373 @@
+{
+  "fetchedAt": "2026-11-14T09:30:00.000Z",
+  "places": [
+    {
+      "id": "41718244-8f65-8176-8523-f8ba403c15d8",
+      "created": "2026-11-13T07:51:10.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Jay's Cafe",
+      "nameJa": "Jay’s cafe",
+      "types": [
+        "Bar"
+      ],
+      "specs": [
+        "Coffee",
+        "Sandwiches",
+        "Beer",
+        "Whisky",
+        "Cocktails"
+      ],
+      "dietary": [],
+      "good": [
+        "Groups",
+        "Solo"
+      ],
+      "prac": [],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/Jay's+cafe%EF%BC%88%E3%82%B8%E3%83%A3%E3%82%A4%E3%82%BA%E3%82%AB%E3%83%95%E3%82%A7%EF%BC%89/data=!4m2!3m1!1s0x5f0b29004701a849:0xb07f98c062692fe1",
+      "note": [
+        "Looking for a bar in Sapporo with live DJs, good music and something a bit different to eat?",
+        "Jay's Cafe in Susukino might be just what you're after.",
+        "They don't have DJs playing every night, but you'll often find someone behind the decks at weekends. It's the sort of place where you can grab a drink, enjoy the music and just soak up the atmosphere.",
+        "The owner, Jay (pronounced Ja-i), has a real soft spot for Southern American food. He fell in love with the food culture while travelling around the American South, and he's brought some of that inspiration back to Sapporo.",
+        "He makes some seriously good sarnies, along with dishes you don't often come across in other Sapporo bars, like gumbo and jambalaya. Definitely not your usual bar snacks.",
+        "One thing to bear in mind: smoking is allowed inside, so don't expect to leave smelling like fresh laundry. But if you're after good music, interesting food and a proper laid-back atmosphere, it's well worth putting up with a bit of smoke.",
+        "For a night out in Susukino that's a little different from the usual bars, Jay's Cafe is a great shout."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-8132-a9d0-f74a0fe8c257",
+      "created": "2026-11-13T07:51:11.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Musubitei",
+      "nameJa": "結び亭",
+      "types": [
+        "Restaurant"
+      ],
+      "specs": [
+        "Jingisukan"
+      ],
+      "dietary": [],
+      "good": [
+        "Groups"
+      ],
+      "prac": [
+        "Cash only"
+      ],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Odori",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/%E7%B5%90%E3%81%B3%E4%BA%AD/data=!4m2!3m1!1s0x5f0b299004ec6881:0x7e7991689992600",
+      "note": [
+        "Here's something you might not know about us Hokkaido locals. We don't actually go out for jingisukan (grilled lamb and mutton) that often.",
+        "Most of us grew up eating it at home. We've got those dome-shaped jingisukan grills, we buy our sauce from the supermarket, and we cook it ourselves. That's how we do it.",
+        "But when I do fancy going out for jingisukan in Sapporo, Musubitei is one of my favourites.",
+        "Unlike those touristy jingisukan restaurants with ridiculously long menus (seriously, fuck those places), Musubitei keeps things simple. Just two types of meat with some veggies. No unnecessary fuss, just good jingisukan.",
+        "It gets properly smoky in here, and I highly recommend chucking plenty of garlic into your dipping sauce. Just don't plan on kissing anyone afterwards. You've been warned.",
+        "One thing worth mentioning: the restaurant is upstairs, and the staircase is pretty steep. Not ideal if you're visiting with small children or anyone with mobility issues.",
+        "The lovely couple who run the place are another reason I like it. They're genuinely welcoming, although the husband seems to prefer a quieter atmosphere, so maybe keep the shouting and drunken nonsense to a minimum.",
+        "If you're after a more local jingisukan experience in Sapporo rather than another tourist trap, Musubitei is well worth a visit."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-81fd-adb8-cb9a055ed5dd",
+      "created": "2026-11-13T07:51:12.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Chugoku Tohoku Hanten",
+      "nameJa": "中国東北飯店",
+      "types": [
+        "Restaurant"
+      ],
+      "specs": [
+        "Chinese"
+      ],
+      "dietary": [],
+      "good": [
+        "Groups"
+      ],
+      "prac": [
+        "Cash only"
+      ],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": "Recommended",
+      "mapsUrl": "https://www.google.com/maps/place/Chugoku+Tohoku+Hanten/data=!4m2!3m1!1s0x5f0b298198e89625:0x7ed27acb24dcb980",
+      "note": [
+        "If you're expecting the kind of Chinese food you'd get in China, the UK or New Zealand, forget it. Chugoku Tohoku Hanten isn't that sort of place.",
+        "This is Japanese Chinese food. Not particularly authentic to China, and probably nothing like your favourite Chinese takeaway back home. But that's the whole point. It's good in its own way.",
+        "The portions are ridiculously generous, and the menu is massive. Come here for a few drinks and plenty of food, or skip the drinks and just eat, eat, eat. Either works.",
+        "And the building? Well, let's just say it doesn't look particularly clean from the outside. But that's usually a good sign for a decent Chinese restaurant, innit? At least that's what I tell myself.",
+        "A couple of things before you go: <b>book a table over the phone</b>, and <b>bring cash</b>. It's a cash-only place, so don't turn up expecting to pay by card.",
+        "Come hungry. Seriously."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-8130-96ab-ccbf700f111c",
+      "created": "2026-11-13T07:51:13.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "NEAR AND FAR",
+      "nameJa": "",
+      "types": [
+        "Bar"
+      ],
+      "specs": [
+        "Pub",
+        "Beer"
+      ],
+      "dietary": [],
+      "good": [
+        "Solo",
+        "Groups"
+      ],
+      "prac": [],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/NEAR+AND+FAR/data=!4m2!3m1!1s0x5f0b294e6573e03b:0xf002974ad9c7fa83",
+      "note": [
+        "Sometimes, I just miss a proper pint of Guinness, even here in Sapporo.",
+        "Whenever that craving kicks in, NEAR AND FAR, a British pub tucked away in Susukino, is one of the places I head to.",
+        "Is it quite the same as having a pint back in the UK? Not exactly, but it definitely scratches that itch.",
+        "They serve classic British pub food like fish and chips, shepherd's pie and bangers and mash. Personally, I wouldn't say the food quite lives up to what you'd find in a good pub back in Britain, but it does the job.",
+        "For me, though, it's all about the Guinness. A properly poured pint, creamy head, and even a little shamrock drawn into the foam. That's honestly enough to keep me coming back.",
+        "If you're looking for a decent pint of Guinness in Sapporo, this place is well worth checking out."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-81d8-96ae-e30ab1c5da79",
+      "created": "2026-11-13T07:51:14.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Susukino Mazesoba Sanchome no Yuhi",
+      "nameJa": "薄野まぜそば 三鳥目の夕日",
+      "types": [
+        "Restaurant"
+      ],
+      "specs": [
+        "Ramen"
+      ],
+      "dietary": [],
+      "good": [
+        "Solo",
+        "Small Group"
+      ],
+      "prac": [],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/%E8%96%84%E9%87%8E%E3%81%BE%E3%81%9C%E3%81%9D%E3%81%B0+%E4%B8%89%E9%B3%A5%E7%9B%AE%E3%81%AE%E5%A4%95%E6%97%A5/data=!4m2!3m1!1s0x5f0b29000c8a6f0f:0x59646a156f19b1eb",
+      "note": [
+        "Oh my God. This was hands down the best ramen I had in 2025. And I don't say that lightly.",
+        "Forget your typical Sapporo miso ramen. Susukino Mazesoba Sanchome no Yuhi does things differently, with thick, wavy noodles that are nothing like what you'd normally expect from Sapporo ramen.",
+        "And that first sip of soup? Bloody hell. It's the kind of thing that makes you close your eyes and let out a slightly inappropriate moan. Yes, it's that good.",
+        "The catch is that they open late, so this isn't somewhere you just pop into for an early dinner. My advice? Head out for a few drinks, grab something small to nibble on, and save some room for this place afterwards.",
+        "Honestly, it's worth planning your evening around. I can't recommend it enough."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-81c2-8d72-fe443eee13e1",
+      "created": "2026-11-13T07:51:15.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Hanke Sandwich & Inn",
+      "nameJa": "ハンケ サンドイッチ アンド イン",
+      "types": [
+        "Café",
+        "Stay"
+      ],
+      "specs": [
+        "Sandwiches",
+        "Guesthouse",
+        "Coffee"
+      ],
+      "dietary": [],
+      "good": [
+        "Small Group",
+        "Solo"
+      ],
+      "prac": [],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Kikusui",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/Hanke+-Sandwich%26Inn-(%E3%83%8F%E3%83%B3%E3%82%B1+%E3%82%B5%E3%83%B3%E3%83%89%E3%82%A4%E3%83%83%E3%83%81+%E3%82%A2%E3%83%B3%E3%83%89%E3%82%A4%E3%83%B3)/data=!4m2!3m1!1s0x5f0b2bc1693343bd:0xdccab0d053d504ab",
+      "note": [
+        "A little outside central Sapporo, Hanke Sandwich &amp; Inn is a lovely little sandwich shop just across the Toyohira River.",
+        "You'll need to cross the river to get here from the city centre, but why not make a nice walk out of it? The riverside is a great place for a stroll, especially when the weather's good.",
+        "The sandwiches here are properly good, especially if you like your bread with a bit of a crust and a decent bite to it.",
+        "One thing worth trying is their saba sandwich (grilled mackerel sandwich). You don't come across these very often in Sapporo, and it's a nice change from your usual sandwich fillings.",
+        "They take their coffee seriously too, so it's a great little spot to stop for a sandwich and a decent brew.",
+        "Nothing overly fancy, just good sandwiches, good coffee and an excuse to enjoy a walk along the river. Sometimes that's all you need."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-811a-a122-ecf26f095052",
+      "created": "2026-11-13T07:51:16.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Menya Yukikaze Susukino-ten",
+      "nameJa": "麺屋 雪風 すすきの店",
+      "types": [
+        "Restaurant"
+      ],
+      "specs": [
+        "Ramen"
+      ],
+      "dietary": [],
+      "good": [
+        "Solo",
+        "Small Group"
+      ],
+      "prac": [
+        "Open late",
+        "Cash only"
+      ],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": "Walk-in",
+      "mapsUrl": "https://www.google.com/maps/place/Yukikaze/data=!4m2!3m1!1s0x5f0b2986251a05a1:0xf03fa2ee8c1e9ca6",
+      "note": [
+        "If you're looking for proper Sapporo miso ramen, Menya Yukikaze in Susukino is one of my favourites.",
+        "Their miso ramen is seriously good. Rich, deeply savoury broth, perfectly chewy noodles, and the kind of flavour that makes you forget how long you've been standing outside.",
+        "And trust me, you might be standing there for a while.",
+        "There's often a massive queue outside, and sometimes you'll need to wait 40 to 60 minutes just to get a seat. Sounds ridiculous for a bowl of ramen, doesn't it?",
+        "But honestly, it's worth it.",
+        "My advice? Skip those tourist-packed ramen alleys in Susukino and come here instead. If you're going to spend your time queuing for ramen in Sapporo, you might as well queue for something genuinely good.",
+        "Just be prepared to wait. Your stomach won't be happy, but your taste buds will."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-8185-b6a2-dbff89fa2481",
+      "created": "2026-11-13T07:51:17.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "Tako King Honten",
+      "nameJa": "たこキング 本店",
+      "types": [
+        "Izakaya"
+      ],
+      "specs": [
+        "Takoyaki"
+      ],
+      "dietary": [],
+      "good": [
+        "Groups",
+        "Solo"
+      ],
+      "prac": [
+        "Open late"
+      ],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Susukino",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/%E3%81%9F%E3%81%93%E3%82%AD%E3%83%B3%E3%82%B0+%E6%9C%AC%E5%BA%97/data=!4m2!3m1!1s0x5f0b29822b3b51a7:0x7864082108defcd0",
+      "note": [
+        "Think you can only get good takoyaki in Osaka?",
+        "Nah, think again.",
+        "Tako King Honten in Sapporo serves all sorts of takoyaki, those lovely little balls of batter filled with octopus. They've got plenty of different flavours to choose from, and they're known for their soft, almost melty texture.",
+        "But here's something else you should try: their Napolitan-style pasta. Get it with cheese. Trust me.",
+        "Now, if you're European, you might be wondering what the heck Napolitan is. It's a very Japanese take on pasta, usually made with ketchup, giving it a slightly sweet, tomatoey flavour. It's probably enough to make an Italian cry.",
+        "But you know what? It's bloody delicious, especially with cheese.",
+        "And then there's the building itself.",
+        "From the outside, the whole place looks so crooked and wonky that I genuinely wouldn't be surprised if it collapsed one day. I'm sure it's perfectly fine, but let's just say the architecture doesn't exactly inspire confidence.",
+        "Still, sometimes you've got to take a few risks in life for good food.",
+        "If you're looking for takoyaki in Sapporo, especially somewhere a bit rough around the edges with plenty of character, Tako King Honten is worth checking out."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    },
+    {
+      "id": "41718244-8f65-81eb-8e4e-c60d01a0d8af",
+      "created": "2026-11-13T07:51:18.000Z",
+      "edited": "2026-11-14T09:15:00.000Z",
+      "status": "Draft",
+      "name": "VOCCI",
+      "nameJa": "Vocci",
+      "types": [
+        "Bar",
+        "Restaurant"
+      ],
+      "specs": [
+        "Italian",
+        "Spanish",
+        "Wine"
+      ],
+      "dietary": [],
+      "good": [
+        "Groups"
+      ],
+      "prac": [],
+      "price": null,
+      "city": "Sapporo",
+      "area": "Odori",
+      "reservation": null,
+      "mapsUrl": "https://www.google.com/maps/place/VOCCI+(%E3%83%B4%E3%82%A9%E3%83%83%E3%83%81)/data=!4m2!3m1!1s0x5f0b298fe3a70a1f:0x516c7cfa1649e6d8",
+      "note": [
+        "Look, I love Japanese food. But when you're travelling around Japan, or even living here in Sapporo, there comes a point when you just want something that doesn't involve miso, soy sauce or dashi for once.",
+        "If you're craving something a bit more European, VOCCI is a good shout.",
+        "This cosy little restaurant in Sapporo serves Italian and Spanish-inspired dishes, along with a decent selection of wines.",
+        "Now, don't walk in expecting the same food you'd get at a proper Italian trattoria or a tapas bar in Spain. Some dishes have their own Japanese twist, and it's not strictly an Italian or Spanish restaurant.",
+        "But that's not necessarily a bad thing.",
+        "The food is good, there's plenty of wine to choose from, and it's a lovely spot to spend an evening when you're missing European flavours.",
+        "Oh, and apparently, VOCCI is named after the owner's cat. Which, frankly, is a perfectly good reason to name a restaurant.",
+        "Sometimes you just need a break from Japanese food. Nothing wrong with that, even in Japan."
+      ],
+      "tip": [],
+      "featured": false,
+      "lastChecked": null,
+      "drawing": null,
+      "photos": []
+    }
+  ]
+}

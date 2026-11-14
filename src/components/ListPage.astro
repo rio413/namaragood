@@ -1,0 +1,102 @@
+---
+import { PLACES, UI, tag, href, num, subline, drawingsForList, drawingFor, svg, MAPS_KEY, MAP_ID, MAPS_LANG } from '../lib/site.js';
+const { lang } = Astro.props;
+const u = UI[lang];
+const drawings = drawingsForList(PLACES);
+const heroDrawing = svg({ set: 'ramen', i: 0 }, 'class="dr"');
+
+const ORDER = {
+  types: ['Restaurant', 'Izakaya', 'Café', 'Bar', 'Bakery & Sweets', 'Stay', 'Sightseeing', 'Activity', 'Shop'],
+  good: ['Solo', 'Small Group', 'Groups', 'Families', 'Dates', 'Rainy day', 'Winter'],
+  reservation: ['Walk-in', 'Recommended', 'Required'],
+  price: ['Free', '¥', '¥¥', '¥¥¥'],
+};
+const values = (field) => {
+  const set = new Set(PLACES.flatMap(p => [].concat(p[field] ?? []).filter(Boolean)));
+  const order = ORDER[field];
+  return [...set].sort((a, b) => order ? order.indexOf(a) - order.indexOf(b) : tag(a, lang).localeCompare(tag(b, lang), lang));
+};
+const GROUPS = [
+  ['specs', u.fSpec], ['area', u.fArea], ['good', u.fGood], ['prac', u.fPrac],
+  ['dietary', u.fDiet], ['reservation', u.fBook], ['price', u.fPrice],
+].map(([f, label]) => ({ f, label, vals: values(f) })).filter(g => g.vals.length);
+const types = values('types');
+const attr = (p, f) => [].concat(p[f] ?? []).filter(Boolean).join('|');
+
+const mapData = PLACES.filter(p => p.lat != null).map(p => ({
+  id: p.slug, n: num(p.num), name: p.name, sub: subline(p, lang), lat: p.lat, lng: p.lng,
+  url: href(lang, 'place', p.slug), svg: svg(drawingFor(p), 'class="dr"'),
+}));
+const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(999).replace('999', '{n}'), saved: u.saved, mapOff: u.mapOff, mapLoading: u.mapLoading };
+---
+<section class="top" aria-labelledby="h1">
+  <div class="wrap hero">
+    <h1 id="h1" class="d">Namara <span class="ol">Good.</span></h1>
+    <Fragment set:html={heroDrawing} />
+  </div>
+  <div class="wrap"><p class="tagline m">{u.tagline}</p></div>
+</section>
+
+<div class="wrap" id="listapp" data-maps-key={MAPS_KEY} data-map-id={MAP_ID} data-maps-lang={MAPS_LANG[lang]} data-i18n={JSON.stringify(i18n)}>
+  <div class="lh">
+    <h2 class="d ol">{u.theList}</h2>
+    <div class="seg m" role="group" aria-label={`${u.list} / ${u.map}`}>
+      <button type="button" data-view="list" aria-pressed="true">{u.list}</button>
+      <button type="button" data-view="map" aria-pressed="false">{u.map}</button>
+    </div>
+  </div>
+
+  <div class="frow m" role="toolbar" aria-label={u.fType}>
+    <button type="button" class="chip" data-f="types" data-v="" aria-pressed="true">{u.all} <span class="n">{PLACES.length}</span></button>
+    {types.map(t => <button type="button" class="chip" data-f="types" data-v={t} aria-pressed="false">{tag(t, lang)}</button>)}
+    <button type="button" class="chip" data-saved aria-pressed="false">♥ {u.saved} <span class="n" data-savedn>0</span></button>
+    {GROUPS.length > 0 && <button type="button" class="chip ghost" data-openfilters aria-haspopup="dialog">{u.filters} <span class="n" data-fn></span></button>}
+  </div>
+  <div class="status m"><span data-count aria-live="polite">{u.count(PLACES.length)}</span><button type="button" class="chip" data-clear hidden style="min-height:28px;padding:4px 10px">{u.clear}</button></div>
+
+  <div data-panel="list">
+    <ol class="rows">
+      {PLACES.map((p, i) => (
+        <li data-id={p.slug} data-types={attr(p, 'types')} data-specs={attr(p, 'specs')} data-area={attr(p, 'area')} data-good={attr(p, 'good')}
+            data-prac={attr(p, 'prac')} data-dietary={attr(p, 'dietary')} data-reservation={attr(p, 'reservation')} data-price={attr(p, 'price')}>
+          <a class="row" href={href(lang, 'place', p.slug)}>
+            <span class="no m">{num(p.num)}</span>
+            <Fragment set:html={svg(drawings[i], 'class="dr"')} />
+            <span class="subwrap"><span class="nm d">{p.name}</span><span class="sub">{subline(p, lang)}</span></span>
+            <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" fill="currentColor"/></svg>
+            <svg width="12" height="8" viewBox="0 0 14 9" aria-hidden="true" style="transform:rotate(-90deg)"><path d="M0 0h14L7 9z" fill="currentColor"/></svg>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <p class="empty" data-empty hidden>{u.noResults}</p>
+    <p class="numnote">{u.numNote}</p>
+  </div>
+
+  <div data-panel="map" hidden>
+    <div class="mapview">
+      <div class="gm" data-gm></div>
+      <div class="mapmsg" data-mapmsg>{MAPS_KEY ? u.mapLoading : u.mapOff}</div>
+      <a class="mapcard" data-mapcard hidden href="#"></a>
+    </div>
+  </div>
+  <script type="application/json" id="mapdata" set:html={JSON.stringify(mapData).replace(/</g, '\\u003c')} />
+</div>
+
+<dialog class="sheet" id="filters" aria-labelledby="fh">
+  <div class="sheet-in">
+    <div class="sheet-head"><h2 id="fh" class="d">{u.filters}</h2><button type="button" data-closefilters aria-label="Close">×</button></div>
+    <div class="sheet-body">
+      {GROUPS.map(g => (
+        <div class="fg">
+          <h3 class="d ol">{g.label}</h3>
+          <div class="chips m">{g.vals.map(v => <button type="button" class="chip" data-f={g.f} data-v={v} aria-pressed="false">{tag(v, lang)}</button>)}</div>
+        </div>
+      ))}
+    </div>
+    <div class="sheet-foot m">
+      <button type="button" class="btn" data-clear>{u.clear}</button>
+      <button type="button" class="btn solid" data-closefilters>{u.done} <span data-count2></span></button>
+    </div>
+  </div>
+</dialog>
