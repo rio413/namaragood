@@ -1,10 +1,25 @@
 ---
 import { UI, href } from '../lib/site.js';
+import { svg } from '../lib/drawings.js';
 const { lang } = Astro.props;
 const u = UI[lang];
 ---
-<section class="top"><div class="wrap" style="padding-bottom:26px"><a class="m" href={href(lang)} style="font-size:12px;text-decoration:none">← {u.back}</a></div></section>
+<section class="top">
+  <div class="wrap about-head">
+    <a class="m" href={href(lang)} style="font-size:12px;text-decoration:none">← {u.back}</a>
+    <div class="hero" style="padding:18px 0 26px">
+      <h1 class="d">{u.aboutTitle}</h1>
+      <Fragment set:html={svg({ set: 'jingisukan', i: 0 }, 'class="dr"')} />
+    </div>
+  </div>
+</section>
 <div class="wrap prose">
-  <h1 class="d">{u.aboutTitle}</h1>
-  {u.aboutBody.map(para => <p set:html={para} />)}
+  {u.aboutBody.map(para => para.startsWith('## ')
+    ? <h2 class="d ol">{para.slice(3)}</h2>
+    : <p set:html={para} />)}
+  <div class="sig">
+    <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="20" cy="15" r="7" fill="#EFEDE7"/><path d="M7 36c2-8 7-12 13-12s11 4 13 12"/></svg>
+    <span class="m">{u.byline}</span>
+  </div>
+  <a class="btn solid big" href={href(lang)}>{u.theList} <span aria-hidden="true">→</span></a>
 </div>

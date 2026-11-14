@@ -50,7 +50,7 @@ if (kind === 'place') {
     review: { '@type': 'Review', author, reviewBody: note.join('\n\n'), inLanguage: lang, datePublished: (place.lastChecked || place.edited || '').slice(0, 10) || undefined },
   }];
 }
-if (kind === 'about') { title = `${u.aboutTitle} | NAMARA GOOD`; description = stripTags(u.aboutBody[0] + ' ' + u.aboutBody[1]); }
+if (kind === 'about') { title = `${u.aboutTitle} | NAMARA GOOD`; description = stripTags(u.aboutBody.filter(x => !x.startsWith('## ')).slice(0, 3).join(' ')).slice(0, 158); }
 ---
 <Base lang={lang} kind={kind} slug={place?.slug} title={title} description={description} jsonld={jsonld} ogImage={place ? cardPath(lang, place.slug, 'og') : undefined}>
   {kind === 'home' && <ListPage lang={lang} />}

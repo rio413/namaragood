@@ -34,7 +34,7 @@ const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(99
     <h1 id="h1" class="d">Namara <span class="ol">Good.</span></h1>
     <Fragment set:html={heroDrawing} />
   </div>
-  <div class="wrap"><p class="tagline m">{u.tagline}</p></div>
+  <div class="wrap"><p class="tagline m">{u.tagline} <a href={href(lang, 'about')} class="aboutlink">{u.aboutLink}</a></p></div>
 </section>
 
 <div class="wrap" id="listapp" data-maps-key={MAPS_KEY} data-map-id={MAP_ID} data-maps-lang={MAPS_LANG[lang]} data-i18n={JSON.stringify(i18n)}>

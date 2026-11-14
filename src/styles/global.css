@@ -57,6 +57,7 @@ svg.dr .f { fill: var(--paper); }
 .hero h1 .ol { -webkit-text-stroke-width: 1.6px; display: block; }
 .hero svg.dr { width: clamp(96px, 22vw, 220px); height: auto; stroke: var(--mustard); stroke-width: 3.5; }
 .hero svg.dr .f { fill: none; }
+.tagline .aboutlink { display: inline-block; margin-left: 4px; text-decoration-thickness: 2px; }
 .tagline { margin: 0; padding-bottom: 22px; font-size: 13px; line-height: 1.25; max-width: 34em; }
 .langhint { background: var(--mustard); color: var(--ink); }
 .langhint .wrap { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; font-size: 13px; }
@@ -114,7 +115,7 @@ dialog.sheet::backdrop { background: rgba(10,10,10,.55); }
 .btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 0 16px; border: var(--rule); background: transparent; text-decoration: none; font-size: 13px; }
 .btn.solid { background: var(--ink); color: var(--mustard); }
 .btn.solid:hover { color: var(--mustard); background: #222; }
-.btn.big { justify-content: space-between; font-family: var(--display); font-stretch: 125%; font-weight: 900; font-size: 15px; min-height: 56px; }
+.btn.big { text-transform: uppercase; justify-content: space-between; font-family: var(--display); font-stretch: 125%; font-weight: 900; font-size: 15px; min-height: 56px; }
 
 /* Map view */
 .mapview { position: relative; height: calc(100vh - 150px); height: calc(100svh - 150px); min-height: 380px; max-height: 760px; border: var(--rule); background: #151515; margin-bottom: 24px; }
@@ -202,7 +203,9 @@ section.blk h2 { margin: 0; font-size: 26px; }
 
 /* About */
 .prose { max-width: 40em; padding-top: 26px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 16px; font-size: 17px; line-height: 1.6; font-weight: 500; }
-.prose h1 { margin: 0 0 8px; font-size: clamp(34px, 8vw, 64px); }
+.about-head .hero h1 { font-size: clamp(34px, 9vw, 88px); }
+.prose h2 { margin: 18px 0 -4px; font-size: clamp(24px, 5vw, 34px); line-height: 1.05; }
+.prose .btn { margin-top: 12px; max-width: 420px; }
 .prose p { margin: 0; }
 
 /* Footer */
