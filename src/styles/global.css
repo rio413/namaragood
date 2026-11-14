@@ -16,6 +16,7 @@ html[lang="zh-Hans"] { --fx: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', ;
 html[lang="th"] { --fx: 'Noto Sans Thai', 'Thonburi', 'Leelawadee UI', ; }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; }
 body {
   margin: 0; background: var(--mustard); color: var(--ink);
@@ -69,13 +70,18 @@ svg.dr .f { fill: var(--paper); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--mustard); }
 
 /* Filter row */
-.frow { display: flex; gap: 6px; align-items: center; padding-top: 12px; padding-bottom: 12px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.frow { display: flex; gap: 6px; align-items: center; padding: 12px var(--pad); margin: 0 calc(var(--pad) * -1); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-padding: 0 var(--pad); }
+.frow.fade-r { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent); }
+.frow.fade-l { -webkit-mask-image: linear-gradient(to right, transparent, #000 40px); mask-image: linear-gradient(to right, transparent, #000 40px); }
+.frow.fade-l.fade-r { -webkit-mask-image: linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 56px), transparent); }
 .frow::-webkit-scrollbar { display: none; }
 .chip { flex: none; background: transparent; border: var(--rule); padding: 7px 11px; font-size: 12px; min-height: 36px; white-space: nowrap; }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--mustard); }
 .chip.ghost { border-style: dashed; }
 .chip .n { opacity: .7; margin-left: 4px; }
-.status { font-size: 11px; padding-bottom: 8px; display: flex; justify-content: space-between; gap: 12px; }
+.status { font-size: 11px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.status .tools { display: flex; gap: 6px; }
+.status .chip { min-height: 34px; padding: 6px 10px; font-size: 11px; }
 
 /* Rows */
 ol.rows { list-style: none; margin: 0; padding: 0; border-top: var(--rule); }
@@ -111,12 +117,16 @@ dialog.sheet::backdrop { background: rgba(10,10,10,.55); }
 .btn.big { justify-content: space-between; font-family: var(--display); font-stretch: 125%; font-weight: 900; font-size: 15px; min-height: 56px; }
 
 /* Map view */
-.mapview { position: relative; height: calc(100vh - 210px); min-height: 420px; border: var(--rule); background: #151515; margin-bottom: 24px; }
+.mapview { position: relative; height: calc(100vh - 150px); height: calc(100svh - 150px); min-height: 380px; max-height: 760px; border: var(--rule); background: #151515; margin-bottom: 24px; }
 .mapview .gm { position: absolute; inset: 0; }
 .mapmsg { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; color: var(--mustard); font-weight: 700; }
-.pin { background: var(--mustard); color: var(--ink); outline: 2px solid var(--ink); font-family: var(--display); font-stretch: 112%; font-weight: 900; font-size: 12px;
-  width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer; transition: transform .12s; }
+.pin { position: relative; width: 14px; height: 14px; background: var(--mustard); outline: 2px solid var(--ink); box-shadow: 0 0 0 4px rgba(232,193,90,.25);
+  display: grid; place-items: center; cursor: pointer; font-family: var(--display); font-stretch: 112%; font-weight: 900; font-size: 11px; color: var(--ink); }
+.pin::before { content: ''; position: absolute; inset: -12px; } /* bigger tap area */
+.pin span { display: none; }
 .pin svg.dr { display: none; width: 46px; height: 31px; stroke-width: 6; stroke: var(--ink); }
+.near .pin { width: 26px; height: 26px; }
+.near .pin span { display: block; }
 .pin.on { width: 62px; height: 46px; outline-width: 3px; box-shadow: 0 0 0 7px rgba(232,193,90,.35); }
 .pin.on span { display: none; }
 .pin.on svg.dr { display: block; }
@@ -205,7 +215,6 @@ footer.foot a { color: var(--mustard); }
   .row .nm { font-size: 22px; }
   .row .sub { margin-top: 0; font-size: 12px; }
   .row .subwrap { display: contents; }
-  .mapview { height: calc(100vh - 260px); }
   .mapcard { left: auto; width: 420px; }
   .pbody { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: start; }
   .pbody .side { position: sticky; top: 20px; }

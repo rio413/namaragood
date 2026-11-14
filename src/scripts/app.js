@@ -122,7 +122,11 @@ if (app) {
     for (const [k, el] of Object.entries(panels)) el.hidden = k !== v;
     $$('[data-view]', app).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === v)));
     if (push) history.replaceState(null, '', v === 'map' ? '#map' : location.pathname);
-    if (v === 'map') initMap();
+    if (v === 'map') {
+      initMap();
+      // Bring the whole map into view (it sits below the big header).
+      if (push) $('.lh', app).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
   $$('[data-view]', app).forEach(b => b.addEventListener('click', () => setView(b.dataset.view, true)));
 
@@ -167,13 +171,27 @@ if (app) {
         bounds.extend(marker.position);
         return m;
       });
-      if (points.length > 1) map.fitBounds(bounds, 60);
+      if (points.length > 1) map.fitBounds(bounds, 48);
       map.addListener('click', () => select(null));
+      // Small squares when zoomed out; numbers once you zoom in.
+      const gm = $('[data-gm]', app);
+      const zoomed = () => gm.classList.toggle('near', map.getZoom() >= 17);
+      map.addListener('zoom_changed', zoomed); zoomed();
       updateMarkers();
     } catch (e) {
       msg.textContent = i18n.mapOff; msg.hidden = false;
     }
   }
+
+  // Fade the edge of the type row when there are more chips to scroll to.
+  const frow = $('.frow', app);
+  const edges = () => {
+    frow.classList.toggle('fade-r', frow.scrollLeft + frow.clientWidth < frow.scrollWidth - 4);
+    frow.classList.toggle('fade-l', frow.scrollLeft > 4);
+  };
+  frow.addEventListener('scroll', edges, { passive: true });
+  addEventListener('resize', edges);
+  edges();
 
   apply();
   setView(location.hash === '#map' ? 'map' : 'list', false);

@@ -49,10 +49,15 @@ const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(99
   <div class="frow m" role="toolbar" aria-label={u.fType}>
     <button type="button" class="chip" data-f="types" data-v="" aria-pressed="true">{u.all} <span class="n">{PLACES.length}</span></button>
     {types.map(t => <button type="button" class="chip" data-f="types" data-v={t} aria-pressed="false">{tag(t, lang)}</button>)}
-    <button type="button" class="chip" data-saved aria-pressed="false">♥ {u.saved} <span class="n" data-savedn>0</span></button>
-    {GROUPS.length > 0 && <button type="button" class="chip ghost" data-openfilters aria-haspopup="dialog">{u.filters} <span class="n" data-fn></span></button>}
   </div>
-  <div class="status m"><span data-count aria-live="polite">{u.count(PLACES.length)}</span><button type="button" class="chip" data-clear hidden style="min-height:28px;padding:4px 10px">{u.clear}</button></div>
+  <div class="status m">
+    <span data-count aria-live="polite">{u.count(PLACES.length)}</span>
+    <span class="tools">
+      <button type="button" class="chip ghost" data-clear hidden>{u.clear}</button>
+      <button type="button" class="chip" data-saved aria-pressed="false">♥ {u.saved} <span class="n" data-savedn>0</span></button>
+      {GROUPS.length > 0 && <button type="button" class="chip" data-openfilters aria-haspopup="dialog">{u.filters} <span class="n" data-fn></span></button>}
+    </span>
+  </div>
 
   <div data-panel="list">
     <ol class="rows">
