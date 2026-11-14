@@ -10,6 +10,9 @@ const KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.TRANSLATE_MODEL || 'claude-sonnet-5-5';
 const SOFTEN = process.env.SOFTEN_SWEARING !== '0';
 
+// Chinese text should use full-width punctuation next to Chinese characters.
+export const zhPunct = (t) => t.replace(/([\u3400-\u9fff」）])\s*([,!?:;])\s*/g, (_, a, b) => a + { ',': '，', '!': '！', '?': '？', ':': '：', ';': '；' }[b]);
+
 export const hashOf = (paras) => sha(PROMPT_VERSION + '\u0000' + JSON.stringify(paras));
 
 const SYSTEM = `You translate short, personal restaurant and bar notes for NAMARA GOOD, a guide to eating and drinking in Sapporo written by a local man who grew up in Hokkaido. His English is casual, British, funny and opinionated. Readers are tourists.
@@ -18,7 +21,7 @@ Translate into Korean (ko), Simplified Chinese (zh), Thai (th) and Vietnamese (v
 
 Rules:
 - Write it the way a local friend would say it in each language. Natural, not literal. Keep his humour, warnings and opinions intact; do not add or remove information.
-- Korean: casual polite 해요체. Chinese: Simplified characters, conversational, like a trusted friend's RedNote post (no emoji). Thai: friendly and casual, the writer uses ผม, use ครับ sparingly. Vietnamese: friendly, the writer is "mình", the reader is "bạn".
+- Korean: casual polite 해요체. Chinese: Simplified characters, full-width Chinese punctuation (，。！？：；), conversational, like a trusted friend's RedNote post (no emoji). Thai: friendly and casual, the writer uses ผม, use ครับ sparingly. Vietnamese: friendly, the writer is "mình", the reader is "bạn".
 - British slang (sarnies, innit, bloody, a good shout) becomes a natural equivalent, never a literal rendering.
 - ${SOFTEN ? 'Strong swear words become a mild, natural expression with the same attitude.' : 'Keep swear words at a similar strength.'}
 - Shop names stay as written in the English (romaji). In Chinese you may add the Japanese name in 「」 the first time if it helps. Area names: Susukino = 스스키노 / 薄野 / ซูซูกิโนะ / Susukino; Odori = 오도리 / 大通 / โอโดริ / Odori. Jingisukan = 징기스칸 / 成吉思汗烤肉 / จิงกิสข่าน / jingisukan.
@@ -45,6 +48,7 @@ async function callClaude(paras, extra = '') {
   for (const l of TARGET_LANGS) {
     if (!Array.isArray(json[l]) || json[l].length !== paras.length) throw new Error(`bad ${l} output (paragraph count)`);
   }
+  json.zh = json.zh.map(zhPunct);
   return json;
 }
 
