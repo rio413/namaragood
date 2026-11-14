@@ -88,9 +88,8 @@ svg.dr .f { fill: var(--paper); }
 ol.rows { list-style: none; margin: 0; padding: 0; border-top: var(--rule); }
 ol.rows li { border-bottom: var(--rule); }
 ol.rows li[hidden] { display: none; }
-.row { display: grid; grid-template-columns: 38px 56px minmax(0, 1fr) 18px 14px; align-items: center; gap: 10px; padding: 10px 0; text-decoration: none; min-height: 62px; }
+.row { display: grid; grid-template-columns: 56px minmax(0, 1fr) 18px 14px; align-items: center; gap: 10px; padding: 10px 0; text-decoration: none; min-height: 62px; }
 .row:hover { background: rgba(10,10,10,.06); color: var(--ink); }
-.row .no { font-size: 13px; }
 .row svg.dr { width: 56px; height: 38px; stroke-width: 6; }
 .row .nm { font-size: 16px; line-height: 1.05; overflow-wrap: break-word; }
 .row .sub { display: block; margin-top: 3px; font-family: var(--text); font-weight: 600; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
@@ -124,13 +123,11 @@ dialog.sheet::backdrop { background: rgba(10,10,10,.55); }
 .pin { position: relative; width: 14px; height: 14px; background: var(--mustard); outline: 2px solid var(--ink); box-shadow: 0 0 0 4px rgba(232,193,90,.25);
   display: grid; place-items: center; cursor: pointer; font-family: var(--display); font-stretch: 112%; font-weight: 900; font-size: 11px; color: var(--ink); }
 .pin::before { content: ''; position: absolute; inset: -12px; } /* bigger tap area */
-.pin span { display: none; }
 .pin svg.dr { display: none; width: 46px; height: 31px; stroke-width: 6; stroke: var(--ink); }
-.near .pin { width: 26px; height: 26px; }
-.near .pin span { display: block; }
+.near .pin { width: 40px; height: 28px; }
+.near .pin svg.dr { display: block; width: 32px; height: 21px; stroke-width: 8; }
 .pin.on { width: 62px; height: 46px; outline-width: 3px; box-shadow: 0 0 0 7px rgba(232,193,90,.35); }
-.pin.on span { display: none; }
-.pin.on svg.dr { display: block; }
+.pin.on svg.dr { display: block; width: 46px; height: 31px; stroke-width: 6; }
 .mapcard { position: absolute; left: 10px; right: 10px; bottom: 10px; background: var(--mustard); border: var(--rule); display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; text-decoration: none; }
 .mapcard[hidden] { display: none; }
 .mapcard svg.dr { width: 56px; height: 38px; stroke-width: 6; }
@@ -145,7 +142,6 @@ dialog.sheet::backdrop { background: rgba(10,10,10,.55); }
 .phead .art svg.dr .f { fill: none; }
 .ptitle { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
 .ptitle h1 { margin: 0; font-size: clamp(32px, 8vw, 64px); overflow-wrap: break-word; hyphens: manual; }
-.ptitle .no { font-size: clamp(32px, 8vw, 72px); -webkit-text-stroke-width: 1.4px; }
 .phead .ja { display: block; margin-top: 10px; font-weight: 700; font-size: 15px; }
 .facts { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; border-bottom: var(--rule); }
 .facts div { padding: 12px 0; border-bottom: 1px solid rgba(10,10,10,.3); display: flex; flex-direction: column; gap: 2px; }
@@ -221,8 +217,7 @@ footer.foot a { color: var(--mustard); }
   .langs { font-size: 13px; gap: 6px; }
   .tagline { font-size: 16px; }
   .lh h2 { font-size: 40px; }
-  .row { grid-template-columns: 56px 84px minmax(0, 1fr) minmax(0, 1.1fr) 18px 14px; gap: 18px; padding: 14px 0; }
-  .row .no { font-size: 16px; }
+  .row { grid-template-columns: 84px minmax(0, 1fr) minmax(0, 1.1fr) 18px 14px; gap: 18px; padding: 14px 0; }
   .row svg.dr { width: 84px; height: 56px; stroke-width: 5; }
   .row .nm { font-size: 22px; }
   .row .sub { margin-top: 0; font-size: 12px; }

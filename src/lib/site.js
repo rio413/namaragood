@@ -6,7 +6,8 @@ const tag = makeTag(autoTags);
 import { drawingFor, drawingsForList, svg } from './drawings.js';
 
 export { LANGS, UI, langByCode, tag, drawingFor, drawingsForList, svg };
-export const PLACES = data.places;
+// Newest first, so returning visitors see what's new at the top.
+export const PLACES = [...data.places].sort((a, b) => b.num - a.num);
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 export const stripTags = (h) => String(h ?? '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");

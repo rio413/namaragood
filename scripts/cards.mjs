@@ -39,9 +39,9 @@ function cardHTML(pl, lang, size) {
   const { w: W, h: H, scale = 1 } = CARD_SIZES[size];
   const w = Math.round(W / scale), h = Math.round(H / scale);
   const what = (pl.specs.length ? pl.specs : pl.types).slice(0, 2).map(t => tag(t, lang));
-  const meta = [...what, tag(pl.area, lang)].filter(Boolean).join(' · ');
+  const meta = what.filter(Boolean).join(' · '); // area is already in the top corner
   const quote = cardQuote(pl, lang);
-  const ja = pl.nameJa && pl.nameJa !== pl.name ? pl.nameJa : '';
+  const ja = pl.nameJa && pl.nameJa.toLowerCase() !== pl.name.toLowerCase() ? pl.nameJa : '';
   const css = ['@fontsource-variable/archivo/wdth.css', '@fontsource/noto-sans-jp/700.css', '@fontsource/noto-sans-jp/900.css', ...FONT_CSS[lang]]
     .map(f => `<link rel="stylesheet" href="/node_modules/${f}">`).join('');
   const L = LANGS.find(l => l.code === lang);
@@ -55,7 +55,7 @@ body{background:var(--k);color:var(--m);font-family:var(--d);-webkit-font-smooth
 .u{font-stretch:125%;font-weight:900;text-transform:uppercase;line-height:.92}
 .ol{color:transparent;-webkit-text-stroke:2px var(--m)}
 .city{font-size:${size === 'og' ? 26 : 34}px}
-.no{font-size:${size === 'og' ? 64 : 92}px;-webkit-text-stroke-width:3px}
+.no{font-size:${size === 'og' ? 26 : 34}px;text-align:right}
 .art{flex:1 1 0;min-height:0;display:flex;align-items:center;justify-content:center}
 .art svg{height:100%;max-width:100%;width:auto;stroke:var(--m);stroke-width:2.2}
 .art svg .f{fill:none}
@@ -72,7 +72,7 @@ body{background:var(--k);color:var(--m);font-family:var(--d);-webkit-font-smooth
 .row{display:flex;gap:40px;flex:1;min-height:0}.row .left{flex:1.3;display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0}
 </style></head><body><div class="c">
 ${size === 'og' ? `
-  <div class="top"><span class="u ol city">Sapporo</span><span class="u ol no">${num(pl.num)}</span></div>
+  <div class="top"><span class="u ol city">Sapporo</span><span class="u ol no">${esc(tag(pl.area, lang) || pl.city || '')}</span></div>
   <div class="row">
     <div class="left">
       <div><h1 class="u name" data-fit="2" data-max="96">${esc(pl.name)}</h1>${ja ? `<p class="ja" lang="ja">${esc(ja)}</p>` : ''}</div>
@@ -82,7 +82,7 @@ ${size === 'og' ? `
   </div>
   <div class="foot"><span class="u logo">Namara <span class="ol">Good.</span></span><span class="cta">${esc(u.cardCta)}<b>${esc(host)}</b></span></div>
 ` : `
-  <div class="top"><span class="u ol city">Sapporo</span><span class="u ol no">${num(pl.num)}</span></div>
+  <div class="top"><span class="u ol city">Sapporo</span><span class="u ol no">${esc(tag(pl.area, lang) || pl.city || '')}</span></div>
   <div class="art">${svg(drawingFor(pl))}</div>
   <div><h1 class="u name" data-fit="${size === 'square' ? 2 : 3}" data-max="${size === 'story' ? 132 : size === 'square' ? 96 : 116}">${esc(pl.name)}</h1>${ja ? `<p class="ja" lang="ja">${esc(ja)}</p>` : ''}</div>
   ${meta ? `<p class="meta">${esc(meta)}</p>` : ''}

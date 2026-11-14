@@ -146,7 +146,7 @@ if (app) {
     if (!m) { card.hidden = true; return; }
     card.href = m.p.url;
     card.innerHTML = `${m.p.svg}<span><span class="nm d"></span><span class="sub"></span></span><span class="go" aria-hidden="true">→</span>`;
-    $('.nm', card).textContent = `${m.p.n} ${m.p.name}`;
+    $('.nm', card).textContent = m.p.name;
     $('.sub', card).textContent = m.p.sub;
     card.hidden = false;
   }
@@ -164,7 +164,7 @@ if (app) {
       markers = points.map(p => {
         const el = document.createElement('div');
         el.className = 'pin';
-        el.innerHTML = `<span>${p.n.slice(1)}</span>${p.svg}`;
+        el.innerHTML = p.svg;
         const marker = new AdvancedMarkerElement({ map, position: { lat: p.lat, lng: p.lng }, content: el, title: p.name, gmpClickable: true });
         const m = { id: p.id, p, el, marker, map };
         marker.addListener('gmp-click', () => select(current === m ? null : m));
@@ -173,7 +173,7 @@ if (app) {
       });
       if (points.length > 1) map.fitBounds(bounds, 48);
       map.addListener('click', () => select(null));
-      // Small squares when zoomed out; numbers once you zoom in.
+      // Small squares when zoomed out; little drawings once you zoom in.
       const gm = $('[data-gm]', app);
       const zoomed = () => gm.classList.toggle('near', map.getZoom() >= 17);
       map.addListener('zoom_changed', zoomed); zoomed();

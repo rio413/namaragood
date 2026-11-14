@@ -24,7 +24,7 @@ const types = values('types');
 const attr = (p, f) => [].concat(p[f] ?? []).filter(Boolean).join('|');
 
 const mapData = PLACES.filter(p => p.lat != null).map(p => ({
-  id: p.slug, n: num(p.num), name: p.name, sub: subline(p, lang), lat: p.lat, lng: p.lng,
+  id: p.slug, name: p.name, sub: subline(p, lang), lat: p.lat, lng: p.lng,
   url: href(lang, 'place', p.slug), svg: svg(drawingFor(p), 'class="dr"'),
 }));
 const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(999).replace('999', '{n}'), saved: u.saved, mapOff: u.mapOff, mapLoading: u.mapLoading };
@@ -65,7 +65,6 @@ const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(99
         <li data-id={p.slug} data-types={attr(p, 'types')} data-specs={attr(p, 'specs')} data-area={attr(p, 'area')} data-good={attr(p, 'good')}
             data-prac={attr(p, 'prac')} data-dietary={attr(p, 'dietary')} data-reservation={attr(p, 'reservation')} data-price={attr(p, 'price')}>
           <a class="row" href={href(lang, 'place', p.slug)}>
-            <span class="no m">{num(p.num)}</span>
             <Fragment set:html={svg(drawings[i], 'class="dr"')} />
             <span class="subwrap"><span class="nm d">{p.name}</span><span class="sub">{subline(p, lang)}</span></span>
             <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" fill="currentColor"/></svg>
@@ -75,7 +74,6 @@ const i18n = { count: [u.count(0), u.count(1), u.count(2)], countTpl: u.count(99
       ))}
     </ol>
     <p class="empty" data-empty hidden>{u.noResults}</p>
-    <p class="numnote">{u.numNote}</p>
   </div>
 
   <div data-panel="map" hidden>
