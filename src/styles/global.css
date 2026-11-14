@@ -5,8 +5,8 @@
   --paper: #EFEDE7;
   --rule: 1.5px solid var(--ink);
   --fx: ;               /* extra font for the page language, set per language below */
-  --display: 'Archivo', var(--fx) Arial, sans-serif;
-  --text: 'Archivo', var(--fx) Arial, sans-serif;
+  --display: 'Archivo Variable', 'Archivo', var(--fx) Arial, sans-serif;
+  --text: 'Archivo Variable', 'Archivo', var(--fx) Arial, sans-serif;
   --ja: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
   --pad: 20px;
   --max: 1120px;
@@ -48,9 +48,10 @@ svg.dr .f { fill: var(--paper); }
 .top a { color: var(--mustard); }
 .bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 16px; padding-bottom: 16px; }
 .brand { text-decoration: none; font-size: 16px; white-space: nowrap; }
+@media (max-width: 400px) { a.brand { font-size: 13px; } }
 .brand .ol { -webkit-text-stroke-width: 1px; }
-.langs { display: flex; gap: 2px; font-size: 12px; }
-.langs a { text-decoration: none; padding: 6px 6px; min-width: 32px; text-align: center; }
+.langs { display: flex; gap: 0; font-size: 13px; margin-right: -8px; }
+.langs a { text-decoration: none; min-width: 38px; min-height: 40px; display: grid; place-items: center; padding: 0 4px; }
 .langs a[aria-current="true"] { text-decoration: underline; text-decoration-thickness: 2px; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 12px; padding-bottom: 22px; }
 .hero h1 { margin: 0; font-size: clamp(46px, 11vw, 120px); }
@@ -145,7 +146,7 @@ dialog.sheet::backdrop { background: rgba(10,10,10,.55); }
 .phead .ja { display: block; margin-top: 10px; font-weight: 700; font-size: 15px; }
 .facts { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; border-bottom: var(--rule); }
 .facts div { padding: 12px 0; border-bottom: 1px solid rgba(10,10,10,.3); display: flex; flex-direction: column; gap: 2px; }
-.facts dt { font-size: 11px; -webkit-text-stroke-width: .8px; }
+.facts dt { font-size: 11px; letter-spacing: .08em; opacity: .7; }
 .facts dd { margin: 0; font-size: 13px; line-height: 1.3; }
 .note { background: var(--paper); margin: 18px calc(var(--pad) * -.4) 0; padding: 22px 18px; border: var(--rule); display: flex; flex-direction: column; gap: 14px; font-weight: 500; font-size: 17px; line-height: 1.6; }
 .note p { margin: 0; }
@@ -177,9 +178,20 @@ section.blk h2 { margin: 0; font-size: 26px; }
 .addrline [lang="ja"] { font-weight: 700; }
 .more h2 { font-size: 20px !important; }
 
+/* Action row under a place's name */
+.actions { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.act { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 14px; font-size: 13px; background: transparent; color: var(--mustard); border: 1.5px solid var(--mustard); text-decoration: none; }
+.top a.act { color: var(--mustard); }
+.act.solid, .top a.act.solid { background: var(--mustard); color: var(--ink); }
+.act.icon { width: 46px; justify-content: center; padding: 0; font-size: 20px; }
+.act[aria-pressed="true"] { background: var(--mustard); color: var(--ink); }
+.row.mini { grid-template-columns: 56px minmax(0, 1fr) 14px !important; gap: 10px !important; padding: 10px 0 !important; }
+.row.mini svg.dr { width: 56px !important; height: 38px !important; stroke-width: 6 !important; }
+.row.mini .nm { font-size: 15px !important; }
+.addrline { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 14px; font-weight: 700; }
+.addrline .btn { min-height: 40px; font-size: 12px; flex: none; }
+
 /* Share card */
-.sharecta { margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; background: var(--mustard); color: var(--ink); border: 0; padding: 10px 14px; font-size: 13px; min-height: 44px; }
-.sharecta:hover { background: #f0cd6c; }
 .sharesheet .sizes { width: 100%; margin: 14px 0; }
 .sharesheet .sizes button { flex: 1; }
 .cardprev { display: flex; justify-content: center; background: rgba(10,10,10,.08); border: var(--rule); padding: 12px; }
@@ -208,6 +220,20 @@ section.blk h2 { margin: 0; font-size: 26px; }
 footer.foot { background: var(--ink); color: var(--mustard); margin-top: 40px; }
 footer.foot .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; align-items: center; padding-top: 22px; padding-bottom: calc(22px + env(safe-area-inset-bottom)); font-size: 12px; }
 footer.foot a { color: var(--mustard); }
+
+/* Thai script needs a size up to stay readable; Vietnamese needs room for accents */
+html[lang="th"] .say button, html[lang="th"] .btn, html[lang="th"] .act { font-size: 14px; }
+html[lang="th"] .chip, html[lang="th"] .seg button { font-size: 13px; }
+html[lang="th"] .row .sub, html[lang="th"] .status { font-size: 12.5px; }
+html[lang="th"] .facts dd { font-size: 14px; }
+html[lang="th"] .facts dt { font-size: 12px; }
+.seg button { white-space: nowrap; }
+html[lang="vi"] .seg button { padding: 9px 10px; font-size: 11px; }
+html[lang="vi"] .lh h2 { font-size: 19px; }
+.lh h2 { white-space: nowrap; }
+/* Thai tone marks turn into a tangle when outlined: Thai headings are solid (the Latin logo stays outlined) */
+html[lang="th"] .ol:not(.brand .ol):not(.hero h1 .ol) { color: var(--olc, var(--ink)); -webkit-text-stroke: 0; }
+html[lang="vi"] .row .sub { letter-spacing: .02em; }
 
 /* Laptop */
 @media (min-width: 860px) {

@@ -242,18 +242,25 @@ if (phrases) {
   render();
 }
 
-// Save
-$$('[data-save]').forEach(b => {
-  const id = b.dataset.save;
-  const paint = () => {
-    const on = saved.has(id);
-    b.setAttribute('aria-pressed', String(on));
-    b.firstChild.textContent = on ? '♥ ' : '♡ ';
-    b.querySelector('span').textContent = on ? b.dataset.on : b.dataset.off;
-  };
-  b.addEventListener('click', () => { saved.has(id) ? saved.delete(id) : saved.add(id); persistSaved(); paint(); });
-  paint();
+// Save (there can be two buttons for the same place; keep them in step)
+const saveBtns = $$('[data-save]');
+const paintSave = () => saveBtns.forEach(b => {
+  const on = saved.has(b.dataset.save);
+  b.setAttribute('aria-pressed', String(on));
+  b.firstChild.textContent = on ? '♥ ' : '♡ ';
+  b.querySelector('span').textContent = on ? b.dataset.on : b.dataset.off;
 });
+saveBtns.forEach(b => b.addEventListener('click', () => {
+  const id = b.dataset.save;
+  saved.has(id) ? saved.delete(id) : saved.add(id); persistSaved(); paintSave();
+}));
+paintSave();
+
+// Copy the Japanese address (for Naver Map, Kakao Map, Amap, Apple Maps…)
+$$('[data-copyaddr]').forEach(b => b.addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(b.dataset.copyaddr); toast(b.dataset.done); }
+  catch { prompt('', b.dataset.copyaddr); }
+}));
 
 // Share panel: card image in three sizes, share / save / copy link.
 const sheet = $('#share');

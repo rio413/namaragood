@@ -8,8 +8,8 @@
     "data": "node scripts/fetch-notion.mjs && node scripts/enrich-places.mjs && node scripts/translate.mjs && node scripts/build-data.mjs",
     "data:sample": "node scripts/build-data.mjs --sample",
     "check-changes": "node scripts/check-changes.mjs",
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "node scripts/fonts.mjs && astro dev",
+    "build": "node scripts/fonts.mjs && astro build",
     "preview": "astro preview",
     "cards": "node scripts/cards.mjs"
   },

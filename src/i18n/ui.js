@@ -13,6 +13,8 @@ export const langByCode = Object.fromEntries(LANGS.map(l => [l.code, l]));
 
 export const UI = {
   en: {
+    alsoIn: a => `Also in ${a}`, morePlaces: 'More places', mapsShort: 'Maps',
+    copyAddr: 'Copy address', copiedAddr: 'Address copied. Paste it into any map app.',
     shareCard: 'Share card', shareTitle: 'Share this place', post: 'Post', story: 'Story', square: 'Square',
     shareImage: 'Share image', saveImage: 'Save image', copyLink: 'Copy link',
     saveHint: 'On a phone, you can also press and hold the image to save it.',
@@ -66,6 +68,8 @@ export const UI = {
     },
   },
   ko: {
+    alsoIn: a => `${a}의 다른 곳`, morePlaces: '다른 곳', mapsShort: '지도',
+    copyAddr: '주소 복사', copiedAddr: '주소를 복사했어요. 네이버 지도나 카카오맵에 붙여 넣으세요.',
     shareCard: '공유 카드', shareTitle: '이 가게 공유하기', post: '게시물', story: '스토리', square: '정사각형',
     shareImage: '이미지 공유', saveImage: '이미지 저장', copyLink: '링크 복사',
     saveHint: '휴대폰에서는 이미지를 길게 눌러서 저장할 수도 있어요.',
@@ -115,6 +119,8 @@ export const UI = {
     },
   },
   zh: {
+    alsoIn: a => `${a}的其他店`, morePlaces: '更多店铺', mapsShort: '地图',
+    copyAddr: '复制地址', copiedAddr: '地址已复制，可粘贴到高德地图或苹果地图。',
     shareCard: '分享卡片', shareTitle: '分享这家店', post: '帖子', story: '快拍', square: '方形',
     shareImage: '分享图片', saveImage: '保存图片', copyLink: '复制链接',
     saveHint: '在手机上也可以长按图片保存。',
@@ -164,6 +170,8 @@ export const UI = {
     },
   },
   th: {
+    alsoIn: a => `ร้านอื่นแถว${a}`, morePlaces: 'ร้านอื่น ๆ', mapsShort: 'แผนที่',
+    copyAddr: 'คัดลอกที่อยู่', copiedAddr: 'คัดลอกที่อยู่แล้ว วางในแอปแผนที่ได้เลย',
     shareCard: 'การ์ดแชร์', shareTitle: 'แชร์ร้านนี้', post: 'โพสต์', story: 'สตอรี่', square: 'สี่เหลี่ยม',
     shareImage: 'แชร์รูป', saveImage: 'บันทึกรูป', copyLink: 'คัดลอกลิงก์',
     saveHint: 'บนมือถือ กดค้างที่รูปเพื่อบันทึกได้เหมือนกัน',
@@ -213,6 +221,8 @@ export const UI = {
     },
   },
   vi: {
+    alsoIn: a => `Quán khác ở ${a}`, morePlaces: 'Quán khác', mapsShort: 'Bản đồ',
+    copyAddr: 'Sao chép địa chỉ', copiedAddr: 'Đã sao chép địa chỉ. Dán vào ứng dụng bản đồ bất kỳ.',
     shareCard: 'Thẻ chia sẻ', shareTitle: 'Chia sẻ quán này', post: 'Bài đăng', story: 'Story', square: 'Vuông',
     shareImage: 'Chia sẻ ảnh', saveImage: 'Lưu ảnh', copyLink: 'Sao chép liên kết',
     saveHint: 'Trên điện thoại, bạn cũng có thể nhấn giữ ảnh để lưu.',

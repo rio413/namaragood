@@ -6,10 +6,8 @@ const { lang, kind = 'home', slug = '', title, description, jsonld = [], ogImage
 const L = langByCode[lang];
 const u = UI[lang];
 const url = (l) => SITE + href(l, kind, slug);
-const fonts = {
-  en: '', ko: '&family=Noto+Sans+KR:wght@500;700;900', zh: '&family=Noto+Sans+SC:wght@500;700;900',
-  th: '&family=Noto+Sans+Thai:wght@500;700;900', vi: '',
-}[lang];
+// Fonts are served from this site (public/fonts), never from Google.
+const extraFont = { ko: 'noto-sans-kr', zh: 'noto-sans-sc', th: 'noto-sans-thai' }[lang];
 ---
 <!doctype html>
 <html lang={L.html}>
@@ -31,9 +29,10 @@ const fonts = {
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0A0A0A">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Noto+Sans+JP:wght@700;900${fonts}&display=swap`}>
+  <link rel="preload" href="/fonts/archivo/files/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/archivo/fonts.css">
+  <link rel="stylesheet" href="/fonts/noto-sans-jp/fonts.css">
+  {extraFont && <link rel="stylesheet" href={`/fonts/${extraFont}/fonts.css`}>}
   {jsonld.map(j => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
 </head>
 <body data-lang={lang}>
