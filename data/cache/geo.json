@@ -1,1 +1,74 @@
-{}
+{
+  "41718244-8f65-811a-a122-ecf26f095052": {
+    "query": "Yukikaze",
+    "placeId": "ChIJoQUaJYYpC18RppwejO6iP_A",
+    "lat": 43.052337,
+    "lng": 141.3526813,
+    "addressJa": "〒064-0807 北海道札幌市中央区南７条西４丁目２−６",
+    "fetchedAt": "2026-11-14T11:57:50.720Z"
+  },
+  "41718244-8f65-8130-96ab-ccbf700f111c": {
+    "query": "NEAR AND FAR",
+    "placeId": "ChIJO-BzZU4pC18Rg_rH2UqXAvA",
+    "lat": 43.055671499999995,
+    "lng": 141.3504309,
+    "addressJa": "〒064-0804 北海道札幌市中央区南４条西５丁目１０ 第４藤井ビル 4階",
+    "fetchedAt": "2026-11-14T11:57:50.991Z"
+  },
+  "41718244-8f65-8132-a9d0-f74a0fe8c257": {
+    "query": "結び亭",
+    "placeId": "ChIJgWjsBJApC18RACaZiRaZ5wc",
+    "lat": 43.0562257,
+    "lng": 141.34442719999998,
+    "addressJa": "〒060-0062 北海道札幌市中央区南２条西９丁目９９８−２",
+    "fetchedAt": "2026-11-14T11:57:51.225Z"
+  },
+  "41718244-8f65-8176-8523-f8ba403c15d8": {
+    "query": "Jay's cafe（ジャイズカフェ）",
+    "placeId": "ChIJSagBRwApC18R4S9pYsCYf7A",
+    "lat": 43.056244899999996,
+    "lng": 141.3549458,
+    "addressJa": "〒064-0804 北海道札幌市中央区南４条西２丁目14−２ セントラルＳ４ビル 8階",
+    "fetchedAt": "2026-11-14T11:57:51.452Z"
+  },
+  "41718244-8f65-8185-b6a2-dbff89fa2481": {
+    "query": "たこキング 本店",
+    "placeId": "ChIJp1E7K4IpC18R0PzeCCEIZHg",
+    "lat": 43.056757,
+    "lng": 141.3594836,
+    "addressJa": "〒060-0054 北海道札幌市中央区南４条東２丁目",
+    "fetchedAt": "2026-11-14T11:57:51.678Z"
+  },
+  "41718244-8f65-81c2-8d72-fe443eee13e1": {
+    "query": "Hanke -Sandwich&Inn-(ハンケ サンドイッチ アンドイン)",
+    "placeId": "ChIJvUMzacErC18RqwTVU9Cwytw",
+    "lat": 43.054497999999995,
+    "lng": 141.367427,
+    "addressJa": "〒062-0903 北海道札幌市豊平区豊平３条２丁目１−４５",
+    "fetchedAt": "2026-11-14T11:57:51.866Z"
+  },
+  "41718244-8f65-81d8-96ae-e30ab1c5da79": {
+    "query": "薄野まぜそば 三鳥目の夕日",
+    "placeId": "ChIJD2-KDAApC18R67EZbxVqZFk",
+    "lat": 43.053659499999995,
+    "lng": 141.3548485,
+    "addressJa": "〒064-0806 北海道札幌市中央区南６条西３丁目６−２４ 第２桂和ビル 1F",
+    "fetchedAt": "2026-11-14T11:57:52.022Z"
+  },
+  "41718244-8f65-81eb-8e4e-c60d01a0d8af": {
+    "query": "VOCCI (ヴォッチ)",
+    "placeId": "ChIJHwqn448pC18R2OZJFvp8bFE",
+    "lat": 43.055751799999996,
+    "lng": 141.3450775,
+    "addressJa": "〒060-0063 北海道札幌市中央区南３条西９丁目９９８−５",
+    "fetchedAt": "2026-11-14T11:57:52.181Z"
+  },
+  "41718244-8f65-81fd-adb8-cb9a055ed5dd": {
+    "query": "Chugoku Tohoku Hanten",
+    "placeId": "ChIJJZbomIEpC18RgLncJMt60n4",
+    "lat": 43.056076499999996,
+    "lng": 141.36116529999998,
+    "addressJa": "〒060-0055 北海道札幌市中央区南５条東３丁目６",
+    "fetchedAt": "2026-11-14T11:57:52.353Z"
+  }
+}
