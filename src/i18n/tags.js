@@ -2,7 +2,6 @@
 // New options you add in Notion are translated automatically by the build
 // (see scripts/translate.mjs, saved in data/cache/tags.json). Anything listed
 // here wins over the automatic version, so fix a bad one by adding it here.
-import auto from '../../data/cache/tags.json';
 
 // [ko, zh, th, vi]
 const T = {
@@ -91,9 +90,12 @@ const T = {
 const EN = { Required: 'Book ahead', Recommended: 'Booking recommended', 'Walk-in': 'Walk in' };
 const IDX = { ko: 0, zh: 1, th: 2, vi: 3 };
 
-export function tag(value, lang) {
-  if (!value) return '';
-  if (lang === 'en') return EN[value] || value;
-  return T[value]?.[IDX[lang]] || auto[value]?.[lang] || EN[value] || value;
+// auto = data/cache/tags.json (passed in, so this file also works outside the site build)
+export function makeTag(auto = {}) {
+  return function tag(value, lang) {
+    if (!value) return '';
+    if (lang === 'en') return EN[value] || value;
+    return T[value]?.[IDX[lang]] || auto[value]?.[lang] || EN[value] || value;
+  };
 }
 export const KNOWN_TAGS = new Set(Object.keys(T));

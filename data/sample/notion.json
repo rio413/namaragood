@@ -42,7 +42,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Definitely not your usual bar snacks."
+      ]
     },
     {
       "id": "41718244-8f65-8132-a9d0-f74a0fe8c257",
@@ -83,7 +86,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Just don't plan on kissing anyone afterwards. You've been warned."
+      ]
     },
     {
       "id": "41718244-8f65-81fd-adb8-cb9a055ed5dd",
@@ -122,7 +128,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Come hungry. Seriously."
+      ]
     },
     {
       "id": "41718244-8f65-8130-96ab-ccbf700f111c",
@@ -161,7 +170,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Sometimes, I just miss a proper pint of Guinness."
+      ]
     },
     {
       "id": "41718244-8f65-81d8-96ae-e30ab1c5da79",
@@ -198,7 +210,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Hands down the best ramen I had in 2025."
+      ]
     },
     {
       "id": "41718244-8f65-81c2-8d72-fe443eee13e1",
@@ -239,7 +254,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Good sandwiches, good coffee and an excuse for a walk along the river."
+      ]
     },
     {
       "id": "41718244-8f65-811a-a122-ecf26f095052",
@@ -281,7 +299,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Your stomach won't be happy, but your taste buds will."
+      ]
     },
     {
       "id": "41718244-8f65-8185-b6a2-dbff89fa2481",
@@ -325,7 +346,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Sometimes you've got to take a few risks in life for good food."
+      ]
     },
     {
       "id": "41718244-8f65-81eb-8e4e-c60d01a0d8af",
@@ -367,7 +391,10 @@
       "featured": false,
       "lastChecked": null,
       "drawing": null,
-      "photos": []
+      "photos": [],
+      "quote": [
+        "Apparently, VOCCI is named after the owner's cat."
+      ]
     }
   ]
 }

@@ -3,20 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "NAMARA GOOD — a local's no-nonsense guide to eating and drinking in Sapporo.",
+  "description": "NAMARA GOOD \u2014 a local's no-nonsense guide to eating and drinking in Sapporo.",
   "scripts": {
     "data": "node scripts/fetch-notion.mjs && node scripts/enrich-places.mjs && node scripts/translate.mjs && node scripts/build-data.mjs",
     "data:sample": "node scripts/build-data.mjs --sample",
     "check-changes": "node scripts/check-changes.mjs",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "cards": "node scripts/cards.mjs"
   },
   "dependencies": {
-    "astro": "5.18.2",
-    "@astrojs/sitemap": "3.7.5"
+    "@astrojs/sitemap": "3.7.5",
+    "astro": "5.18.2"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource/noto-sans-jp": "^5.3.1",
+    "@fontsource/noto-sans-kr": "^5.3.1",
+    "@fontsource/noto-sans-sc": "^5.3.1",
+    "@fontsource/noto-sans-thai": "^5.3.0",
+    "playwright": "^1.65.1"
   }
 }

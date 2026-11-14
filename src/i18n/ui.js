@@ -13,6 +13,10 @@ export const langByCode = Object.fromEntries(LANGS.map(l => [l.code, l]));
 
 export const UI = {
   en: {
+    shareCard: 'Share card', shareTitle: 'Share this place', post: 'Post', story: 'Story', square: 'Square',
+    shareImage: 'Share image', saveImage: 'Save image', copyLink: 'Copy link',
+    saveHint: 'On a phone, you can also press and hold the image to save it.',
+    cardCta: 'Where a local actually eats and drinks',
     title: 'NAMARA GOOD: where a local actually eats and drinks in Sapporo',
     metaDesc: 'Honest, no-rankings notes on where to eat and drink in Sapporo, from someone born and raised in Hokkaido. Ramen, jingisukan, bars, cafés. Good is good. That\'s it.',
     tagline: 'Where a local actually eats and drinks. Good is good. That\'s it.',
@@ -50,6 +54,10 @@ export const UI = {
     },
   },
   ko: {
+    shareCard: '공유 카드', shareTitle: '이 가게 공유하기', post: '게시물', story: '스토리', square: '정사각형',
+    shareImage: '이미지 공유', saveImage: '이미지 저장', copyLink: '링크 복사',
+    saveHint: '휴대폰에서는 이미지를 길게 눌러서 저장할 수도 있어요.',
+    cardCta: '현지인이 진짜 가는 곳',
     title: 'NAMARA GOOD: 삿포로 현지인이 진짜 가는 맛집과 술집',
     metaDesc: '홋카이도에서 나고 자란 사람이 솔직하게 적은 삿포로 맛집·술집 리스트. 순위도 광고도 없어요. 라멘, 징기스칸, 바, 카페.',
     tagline: '현지인이 진짜로 먹고 마시는 곳. 좋은 건 좋은 거예요. 그게 다예요.',
@@ -83,6 +91,10 @@ export const UI = {
     },
   },
   zh: {
+    shareCard: '分享卡片', shareTitle: '分享这家店', post: '帖子', story: '快拍', square: '方形',
+    shareImage: '分享图片', saveImage: '保存图片', copyLink: '复制链接',
+    saveHint: '在手机上也可以长按图片保存。',
+    cardCta: '搜索 NAMARA GOOD',
     title: 'NAMARA GOOD：札幌本地人真正会去的餐厅和酒吧',
     metaDesc: '北海道土生土长的本地人写的札幌吃喝清单。没有排名，没有广告。拉面、成吉思汗烤肉、酒吧、咖啡馆。',
     tagline: '本地人真正会去吃、去喝的地方。好就是好，就这么简单。',
@@ -116,6 +128,10 @@ export const UI = {
     },
   },
   th: {
+    shareCard: 'การ์ดแชร์', shareTitle: 'แชร์ร้านนี้', post: 'โพสต์', story: 'สตอรี่', square: 'สี่เหลี่ยม',
+    shareImage: 'แชร์รูป', saveImage: 'บันทึกรูป', copyLink: 'คัดลอกลิงก์',
+    saveHint: 'บนมือถือ กดค้างที่รูปเพื่อบันทึกได้เหมือนกัน',
+    cardCta: 'ที่ที่คนท้องถิ่นไปกินไปดื่มจริง ๆ',
     title: 'NAMARA GOOD: ร้านกินร้านดื่มที่คนท้องถิ่นซัปโปโรไปจริง ๆ',
     metaDesc: 'ลิสต์ร้านกินร้านดื่มในซัปโปโร เขียนตรง ๆ โดยคนที่เกิดและโตในฮอกไกโด ไม่มีจัดอันดับ ไม่มีโฆษณา ราเมน จิงกิสข่าน บาร์ คาเฟ่',
     tagline: 'ที่ที่คนท้องถิ่นไปกินไปดื่มจริง ๆ ดีก็คือดี แค่นั้นเลย',
@@ -149,6 +165,10 @@ export const UI = {
     },
   },
   vi: {
+    shareCard: 'Thẻ chia sẻ', shareTitle: 'Chia sẻ quán này', post: 'Bài đăng', story: 'Story', square: 'Vuông',
+    shareImage: 'Chia sẻ ảnh', saveImage: 'Lưu ảnh', copyLink: 'Sao chép liên kết',
+    saveHint: 'Trên điện thoại, bạn cũng có thể nhấn giữ ảnh để lưu.',
+    cardCta: 'Nơi người địa phương thật sự ăn uống',
     title: 'NAMARA GOOD: những quán người Sapporo thật sự hay ăn và uống',
     metaDesc: 'Danh sách quán ăn, quán nhậu ở Sapporo do một người sinh ra và lớn lên ở Hokkaido viết thật lòng. Không xếp hạng, không quảng cáo. Ramen, jingisukan, bar, cà phê.',
     tagline: 'Những nơi người địa phương thật sự ăn và uống. Ngon là ngon. Vậy thôi.',

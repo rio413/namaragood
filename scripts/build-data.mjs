@@ -51,6 +51,7 @@ const places = notion.places.map(pl => {
     addressJa: (g.addressJa || '').replace(/^〒?\s*\d{3}-?\d{4}\s*/, '').replace(/^北海道\s*/, '').trim(),
     note: translated(pl.note),
     tip: translated(pl.tip),
+    quote: translated(pl.quote || []),
     featured: pl.featured, lastChecked: pl.lastChecked, edited: pl.edited,
     drawing: pl.drawing, photos: pl.photos || [],
   };

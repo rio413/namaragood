@@ -255,13 +255,43 @@ $$('[data-save]').forEach(b => {
   paint();
 });
 
-// Share
-$$('[data-share]').forEach(b => b.addEventListener('click', async () => {
-  const data = { title: b.dataset.title, url: location.href.split('#')[0] };
-  if (navigator.share) { try { await navigator.share(data); return; } catch (e) { if (e.name === 'AbortError') return; } }
-  try { await navigator.clipboard.writeText(data.url); toast(b.dataset.copied); }
-  catch { prompt('', data.url); }
-}));
+// Share panel: card image in three sizes, share / save / copy link.
+const sheet = $('#share');
+if (sheet) {
+  const img = $('[data-cardimg]', sheet), save = $('[data-saveimg]', sheet), shareBtn = $('[data-shareimg]', sheet);
+  const pageUrl = () => location.href.split('#')[0];
+  let src = $('[data-size][aria-pressed="true"]', sheet).dataset.src;
+  const fileFor = async () => {
+    const blob = await (await fetch(src)).blob();
+    return new File([blob], `namaragood-${sheet.dataset.file}.png`, { type: 'image/png' });
+  };
+  // Sharing an image file works on phones (iOS/Android); desktops get Save + Copy link.
+  try {
+    const probe = new File([new Blob(['x'], { type: 'image/png' })], 'x.png', { type: 'image/png' });
+    shareBtn.hidden = !(navigator.canShare && navigator.canShare({ files: [probe] }));
+  } catch { shareBtn.hidden = true; }
+  if (!shareBtn.hidden) save.classList.remove('solid');
+
+  $$('[data-openshare]').forEach(b => b.addEventListener('click', () => sheet.showModal()));
+  $$('[data-closeshare]', sheet).forEach(b => b.addEventListener('click', () => sheet.close()));
+  sheet.addEventListener('click', e => { if (e.target === sheet) sheet.close(); });
+  $$('[data-size]', sheet).forEach(b => b.addEventListener('click', () => {
+    $$('[data-size]', sheet).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    src = b.dataset.src; img.src = src; save.href = src;
+    save.download = `namaragood-${sheet.dataset.file}-${b.dataset.size}.png`;
+  }));
+  shareBtn.addEventListener('click', async () => {
+    try { await navigator.share({ files: [await fileFor()], title: sheet.dataset.title, url: pageUrl() }); }
+    catch (e) {
+      if (e.name === 'AbortError') return;
+      try { await navigator.share({ files: [await fileFor()] }); } catch {} // some apps refuse files + url together
+    }
+  });
+  $('[data-copylink]', sheet).addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(pageUrl()); toast(sheet.dataset.copied); }
+    catch { prompt('', pageUrl()); }
+  });
+}
 
 // Small map on a place page, loaded only when scrolled near it.
 const mini = $('[data-minimap]');

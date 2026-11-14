@@ -104,6 +104,7 @@ for (const pg of pages) {
     manualLng: prop(pg, 'Lng')?.number ?? null,
     note: richToParas(prop(pg, 'Note')?.rich_text),
     tip: richToParas(prop(pg, 'Tip')?.rich_text),
+    quote: richToParas(prop(pg, 'Quote')?.rich_text).slice(0, 1),
     featured: !!prop(pg, 'Featured')?.checkbox,
     lastChecked: prop(pg, 'Last checked')?.date?.start || null,
     drawing: sel(prop(pg, 'Drawing')) ?? (prop(pg, 'Drawing')?.number ?? null),

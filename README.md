@@ -22,6 +22,7 @@ Notion (Places)  →  GitHub Actions (hourly)  →  Cloudflare Pages
 
 Tips:
 - **Note**: write as many paragraphs as you like; leave an empty line between them. **Bold**, *italic* and links are kept. The first paragraph is shown larger, so make it the hook.
+- **Quote**: one short, punchy line for the share card (e.g. *Come hungry. Seriously.*). Translated automatically. If blank, the card uses the first sentence of the Note.
 - **Tip**: an optional heads-up box (queues, closed days).
 - **Maps link**: the share link from Google Maps. The pin comes from the place name in that link. If a pin lands in the wrong spot, type the correct **Lat** and **Lng** in Notion; they win.
 - **Status → Closed** takes a place off the site without deleting your notes.
@@ -103,4 +104,5 @@ With real data: copy `.env.example` to `.env`, fill it in (it is git-ignored), t
 | Line drawings and which speciality gets which | `src/lib/drawings.js` |
 | Colours, type, layout | `src/styles/global.css` |
 | Translation instructions (tone, glossary) | `scripts/translate.mjs` |
+| Share card design (post, story, square, link preview) | `scripts/cards.mjs` |
 | Publishing schedule | `.github/workflows/publish.yml` |

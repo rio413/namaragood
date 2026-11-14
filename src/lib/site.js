@@ -1,6 +1,8 @@
 import data from '../../data/places.json';
 import { LANGS, UI, langByCode } from '../i18n/ui.js';
-import { tag } from '../i18n/tags.js';
+import { makeTag } from '../i18n/tags.js';
+import autoTags from '../../data/cache/tags.json';
+const tag = makeTag(autoTags);
 import { drawingFor, drawingsForList, svg } from './drawings.js';
 
 export { LANGS, UI, langByCode, tag, drawingFor, drawingsForList, svg };

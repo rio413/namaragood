@@ -54,7 +54,7 @@ if (isMain) {
   if (!notion) { log('no data/notion.json, skipping translation'); process.exit(0); }
   const cache = readJson(p('data/cache/translations.json'), {});
   const needed = new Map();
-  for (const pl of notion.places) for (const paras of [pl.note, pl.tip]) {
+  for (const pl of notion.places) for (const paras of [pl.note, pl.tip, pl.quote]) {
     if (paras?.length) { const h = hashOf(paras); if (!cache[h]) needed.set(h, { paras, name: pl.name }); }
   }
   if (needed.size && !KEY) log(`no ANTHROPIC_API_KEY: ${needed.size} text(s) will show in English only`);

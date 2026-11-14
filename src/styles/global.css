@@ -180,6 +180,15 @@ section.blk h2 { margin: 0; font-size: 26px; }
 .addrline [lang="ja"] { font-weight: 700; }
 .more h2 { font-size: 20px !important; }
 
+/* Share card */
+.sharecta { margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; background: var(--mustard); color: var(--ink); border: 0; padding: 10px 14px; font-size: 13px; min-height: 44px; }
+.sharecta:hover { background: #f0cd6c; }
+.sharesheet .sizes { width: 100%; margin: 14px 0; }
+.sharesheet .sizes button { flex: 1; }
+.cardprev { display: flex; justify-content: center; background: rgba(10,10,10,.08); border: var(--rule); padding: 12px; }
+.cardprev img { display: block; max-width: 100%; max-height: 52vh; height: auto; width: auto; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+.sharesheet .hint { font-size: 12px; font-weight: 600; margin: 10px 0 0; opacity: .8; }
+
 /* Full-screen phrase */
 .full { position: fixed; inset: 0; z-index: 50; background: var(--ink); color: var(--mustard); display: flex; flex-direction: column; justify-content: center; gap: 20px; padding: 32px 24px; border: 0; width: 100%; text-align: left; }
 .full[hidden] { display: none; }

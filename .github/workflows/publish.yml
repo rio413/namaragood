@@ -65,6 +65,23 @@ jobs:
         if: steps.ready.outputs.go == 'true' && (github.event_name != 'schedule' || steps.check.outputs.changed == 'true')
         run: npm run build
 
+      # Share cards: only new or changed ones are drawn; the rest come from this cache.
+      - name: Restore share cards
+        if: steps.ready.outputs.go == 'true' && (github.event_name != 'schedule' || steps.check.outputs.changed == 'true')
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache/cards
+            ~/.cache/ms-playwright
+          key: cards-${{ github.run_id }}
+          restore-keys: cards-
+
+      - name: Draw share cards
+        if: steps.ready.outputs.go == 'true' && (github.event_name != 'schedule' || steps.check.outputs.changed == 'true')
+        run: |
+          npx playwright install --with-deps chromium-headless-shell
+          npm run cards
+
       - name: Deploy to Cloudflare Pages
         if: steps.ready.outputs.go == 'true' && (github.event_name != 'schedule' || steps.check.outputs.changed == 'true')
         env:

@@ -9,3 +9,4 @@ dist/
 data/notion.json
 data/places.json
 public/photos/
+.cache/

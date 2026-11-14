@@ -8,6 +8,7 @@ import ListPage from '../components/ListPage.astro';
 import PlacePage from '../components/PlacePage.astro';
 import AboutPage from '../components/AboutPage.astro';
 import { LANGS, PLACES, UI, SITE, href, textIn, stripTags, tag } from '../lib/site.js';
+import { cardPath } from '../lib/cardtext.js';
 
 export function getStaticPaths() {
   const out = [];
@@ -51,7 +52,7 @@ if (kind === 'place') {
 }
 if (kind === 'about') { title = `${u.aboutTitle} | NAMARA GOOD`; description = stripTags(u.aboutBody[0] + ' ' + u.aboutBody[1]); }
 ---
-<Base lang={lang} kind={kind} slug={place?.slug} title={title} description={description} jsonld={jsonld}>
+<Base lang={lang} kind={kind} slug={place?.slug} title={title} description={description} jsonld={jsonld} ogImage={place ? cardPath(lang, place.slug, 'og') : undefined}>
   {kind === 'home' && <ListPage lang={lang} />}
   {kind === 'place' && <PlacePage lang={lang} place={place} />}
   {kind === 'about' && <AboutPage lang={lang} />}
