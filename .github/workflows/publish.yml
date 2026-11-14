@@ -37,8 +37,8 @@ jobs:
       SITE_URL: ${{ vars.SITE_URL || 'https://namaragood.pages.dev' }}
       INCLUDE_DRAFTS: ${{ vars.INCLUDE_DRAFTS || '0' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm }
       - run: npm ci
 

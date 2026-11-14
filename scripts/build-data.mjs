@@ -47,7 +47,8 @@ const places = notion.places.map(pl => {
     price: pl.price, city: pl.city, area: pl.area, reservation: pl.reservation,
     mapsUrl: pl.mapsUrl, placeId: g.placeId || null,
     lat: pl.manualLat ?? g.lat ?? null, lng: pl.manualLng ?? g.lng ?? null,
-    addressJa: g.addressJa || '',
+    // Drop the postcode and 北海道: drivers only need 札幌市…
+    addressJa: (g.addressJa || '').replace(/^〒?\s*\d{3}-?\d{4}\s*/, '').replace(/^北海道\s*/, '').trim(),
     note: translated(pl.note),
     tip: translated(pl.tip),
     featured: pl.featured, lastChecked: pl.lastChecked, edited: pl.edited,
