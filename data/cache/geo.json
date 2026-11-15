@@ -70,5 +70,45 @@
     "lng": 141.36116529999998,
     "addressJa": "〒060-0055 北海道札幌市中央区南５条東３丁目６",
     "fetchedAt": "2026-11-14T11:57:52.353Z"
+  },
+  "41918244-8f65-8102-b883-fb5009359ded": {
+    "query": "OTHER CAFE",
+    "placeId": "ChIJpVLhNhsrC18RIOB_Y22vcBg",
+    "lat": 43.0309588,
+    "lng": 141.34539089999998,
+    "addressJa": "〒064-0921 北海道札幌市中央区南２１条西１０丁目２−１１",
+    "fetchedAt": "2026-11-15T09:30:58.102Z"
+  },
+  "41918244-8f65-81b1-b802-ec12d31be91a": {
+    "query": "nøa coffee and sandwich",
+    "placeId": "ChIJTYFeHTArC18RMra5Et6wySk",
+    "lat": 43.0470998,
+    "lng": 141.350234,
+    "addressJa": "〒064-0810 北海道札幌市中央区南１０条西６丁目６−２０",
+    "fetchedAt": "2026-11-15T09:30:58.308Z"
+  },
+  "41918244-8f65-8104-ade7-cf8ca869835f": {
+    "query": "Akatsuki",
+    "placeId": "ChIJE4KSD28pC18RgnjzbYozhzM",
+    "lat": 43.0540807,
+    "lng": 141.3544157,
+    "addressJa": "〒064-0805 北海道札幌市中央区南５条西３丁目３−番地 中銀三番館ビル 4F",
+    "fetchedAt": "2026-11-15T09:30:58.498Z"
+  },
+  "41918244-8f65-8127-a515-d3d10db00ddf": {
+    "query": "ranran yakisoba",
+    "placeId": "ChIJYbmQ6JEpC18RgEj5P15wo6s",
+    "lat": 43.054842,
+    "lng": 141.3404558,
+    "addressJa": "〒060-0063 北海道札幌市中央区南３条西１２丁目３２６−１０ 札幌ニュースカイマンション１階",
+    "fetchedAt": "2026-11-15T09:30:58.698Z"
+  },
+  "41918244-8f65-8141-a017-c629aa8bc748": {
+    "query": "ARCO",
+    "placeId": "ChIJHUPnR4UpC18RXtmAbt1p2WQ",
+    "lat": 43.0563889,
+    "lng": 141.3477812,
+    "addressJa": "〒060-0063 北海道札幌市中央区南３条西７丁目３",
+    "fetchedAt": "2026-11-15T09:30:58.888Z"
   }
 }

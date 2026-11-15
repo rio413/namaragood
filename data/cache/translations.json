@@ -610,5 +610,150 @@
     ],
     "model": "claude-sonnet-5-5",
     "at": "2026-11-14T12:23:10.442Z"
+  },
+  "0e3458ddea8ffb0c": {
+    "en": [
+      "It's a bit of a walk from the centre, in a part of town you'd probably never pass through, tourist or local, unless you were coming here. But why not, when there's good coffee and good vibes at the end of it? It's also on the way to Mt Moiwa, so it's a handy stop if you're heading up.",
+      "The owner used to live in Wellington, so yes, you get a proper-sized long black. The space is roomy and lovely, and the bagels are good, so you've got something to nibble with your coffee. He often hosts art events, so expect artwork on the walls, on the tables and sometimes on the floor.",
+      "It's one of very few cafés where kids walking past wave at the owner. That probably tells you more than I can. Dogs are welcome too."
+    ],
+    "ko": [
+      "시내 중심에서 좀 걸어야 해요. 여기 오는 게 아니면 관광객이든 현지인이든 굳이 지나갈 일이 없는 동네에 있거든요. 그래도 끝에 좋은 커피와 좋은 분위기가 기다리고 있는데 가볼 만하죠. 모이와산 가는 길목이기도 해서, 올라가기 전에 들르기도 좋아요.",
+      "사장님이 예전에 웰링턴에서 살았대요. 그래서 롱 블랙이 제대로 된 사이즈로 나와요. 공간도 넓고 예쁘고, 베이글도 맛있어서 커피랑 같이 간단히 먹을 것도 있어요. 아트 이벤트도 자주 열어서 벽에도, 테이블 위에도, 가끔은 바닥에도 작품이 있을 거예요.",
+      "지나가던 아이들이 사장님한테 손을 흔드는 카페는 흔치 않아요. 이거 하나면 제가 따로 설명 안 해도 어떤 곳인지 감이 오실 거예요. 강아지도 환영이에요."
+    ],
+    "zh": [
+      "从市中心走过去有点远，那一带不管是游客还是本地人，除非是专门来这里，不然基本不会路过。但尽头有好咖啡、气氛又好，何乐而不为呢。这里也在去藻岩山的路上，所以要上山的话顺路来坐坐正合适。",
+      "老板以前住在惠灵顿，所以这里的长黑咖啡（long black）分量是正常的。空间宽敞又好看，贝果也不错，喝咖啡时可以配点东西吃。他经常办艺术活动，所以墙上、桌上，有时候连地上都是艺术作品。",
+      "这是极少数路过的小朋友会跟老板挥手打招呼的咖啡店之一。这大概比我说什么都更能说明问题。狗狗也可以进来。"
+    ],
+    "th": [
+      "ต้องเดินจากใจกลางเมืองไปพอสมควร อยู่ในย่านที่ถ้าไม่ได้ตั้งใจมาที่นี่ ไม่ว่าจะนักท่องเที่ยวหรือคนท้องถิ่นก็คงไม่ได้ผ่านอยู่แล้ว แต่ปลายทางมีกาแฟดีๆ กับบรรยากาศดีๆ รออยู่ จะไม่ไปได้ยังไงครับ ร้านนี้อยู่ระหว่างทางขึ้นภูเขาโมอิวะด้วย ถ้าจะขึ้นไปก็แวะได้สะดวกเลย",
+      "เจ้าของร้านเคยอาศัยอยู่ที่เวลลิงตัน เลยได้ลองแบล็กขนาดจัดเต็มสมชื่อจริงๆ ร้านกว้างขวางและน่านั่ง เบเกิลก็อร่อย มีอะไรกินแกล้มกับกาแฟด้วย เจ้าของจัดอีเวนต์ศิลปะบ่อย เลยจะเห็นงานศิลปะอยู่ตามผนัง บนโต๊ะ และบางทีก็บนพื้นด้วย",
+      "เป็นหนึ่งในไม่กี่ร้านกาแฟที่เด็กๆ เดินผ่านแล้วโบกมือทักเจ้าของร้าน แค่นี้ก็น่าจะบอกอะไรได้มากกว่าที่ผมจะเล่าได้อีก หมาก็เข้าได้นะครับ"
+    ],
+    "vi": [
+      "Quán nằm hơi xa trung tâm, trong một khu mà dù là khách du lịch hay dân địa phương thì chắc cũng chẳng bao giờ đi ngang qua, trừ khi đến thẳng đây. Nhưng cuối đường có cà phê ngon với không khí dễ chịu thì sao lại không đi nhỉ? Quán cũng nằm trên đường lên núi Moiwa nên nếu bạn định lên đó thì ghé qua rất tiện.",
+      "Chủ quán từng sống ở Wellington, nên bạn sẽ được uống ly long black đúng cỡ đàng hoàng. Không gian rộng rãi, dễ thương, bánh bagel cũng ngon nên có đồ nhâm nhi cùng cà phê. Anh ấy hay tổ chức các sự kiện nghệ thuật, nên đừng ngạc nhiên khi thấy tác phẩm trên tường, trên bàn, và đôi khi cả dưới sàn.",
+      "Đây là một trong số rất ít quán cà phê mà bọn trẻ đi ngang qua còn vẫy tay chào chủ quán. Chắc chuyện này nói lên nhiều hơn những gì mình kể được. Quán cũng chào đón cả chó nữa."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-15T09:31:13.998Z"
+  },
+  "34c42074b2575792": {
+    "en": [
+      "Ever find yourself in Japan thinking, \"God, I miss a proper toastie on decent sourdough\"? Yeah. This is the place.",
+      "The owner used to work at a bakery in New Zealand, and he knows exactly what Sapporo is missing: real, hard bread, the sourdough kind, which is surprisingly hard to come by here. He's just as serious about his coffee, and it's exceptional. The staff are all very friendly and the owner speaks good English. One thing I miss living in Japan is a proper chit-chat with the barista, and you can have one here, as long as you're not a twat about it. Kids and dogs are welcome too.",
+      "One warning: the toasties often sell out by 1 or 2pm. Make this your first stop of the day, not an afternoon afterthought."
+    ],
+    "ko": [
+      "일본에서 지내다 보면 \"아, 제대로 된 사워도우로 만든 토스트 샌드위치 먹고 싶다\" 싶을 때 있잖아요? 네, 바로 여기예요.",
+      "사장님이 뉴질랜드 베이커리에서 일한 적이 있어서, 삿포로에 뭐가 부족한지 정확히 알아요. 바로 단단하고 진짜 빵다운 사워도우인데, 여기선 의외로 구하기가 어렵거든요. 커피도 빵만큼 진지하게 만드는데, 정말 훌륭해요. 직원분들도 다 친절하고 사장님은 영어도 잘하세요. 저는 일본에 살면서 바리스타랑 가볍게 수다 떠는 게 제일 그리운데, 여기선 그게 돼요. 진상만 안 부리면요. 아이랑 강아지도 환영이에요.",
+      "한 가지 주의할 점이 있어요. 토스트 샌드위치는 1~2시 쯤이면 자주 다 팔려요. 오후에 어슬렁 가지 말고, 하루의 첫 코스로 잡으세요."
+    ],
+    "zh": [
+      "在日本待着待着，有没有突然冒出一句：“天哪，好想吃一份用靠谱酸种面包做的烤三明治”？有的话，就来这家吧。",
+      "老板以前在新西兰的面包店干过，所以他太清楚札幌缺什么了：就是那种又硬又扎实的真正酸种面包，在这边意外地难找。他对咖啡同样认真，而且真的非常好喝。店员都很友好，老板英语也不错。我住在日本，最怀念的一件事就是能跟咖啡师好好闲聊几句，在这里就可以，只要你别太讨人嫌。小朋友和狗狗也都欢迎。",
+      "提醒一句：烤三明治经常在下午一两点就卖完了。把这里当成一天的第一站，别当成下午随便逛逛的备选。"
+    ],
+    "th": [
+      "เคยอยู่ญี่ปุ่นแล้วคิดไหมครับว่า \"โอ๊ย อยากกินแซนด์วิชปิ้งดีๆ ที่ทำจากขนมปังซาวร์โดว์จริงๆ จัง\" ถ้าเคย ที่นี่เลยครับ",
+      "เจ้าของร้านเคยทำงานในร้านเบเกอรี่ที่นิวซีแลนด์ เขารู้ดีเลยว่าซัปโปโรขาดอะไร ก็คือขนมปังแข็งๆ ของแท้แบบซาวร์โดว์ ซึ่งหาได้ยากกว่าที่คิดแถวนี้ เรื่องกาแฟก็จริงจังไม่แพ้กัน และกาแฟอร่อยมาก พนักงานทุกคนเป็นกันเองมาก เจ้าของพูดอังกฤษได้ดีด้วย สิ่งที่ผมคิดถึงที่สุดเวลาอยู่ญี่ปุ่นคือการได้คุยเล่นกับบาริสต้าสบายๆ ที่นี่คุยได้ครับ ขอแค่อย่านิสัยเสียก็พอ เด็กๆ กับน้องหมาก็เข้าได้เหมือนกัน",
+      "เตือนไว้หน่อยนะครับ แซนด์วิชปิ้งมักจะหมดตอนบ่ายโมงหรือบ่ายสอง ให้มาที่นี่เป็นที่แรกของวันเลย อย่าเอาไว้แวะตอนบ่ายเป็นตัวเลือกสำรอง"
+    ],
+    "vi": [
+      "Có bao giờ bạn đang ở Nhật mà chợt nghĩ: \"Trời ơi, thèm một cái sandwich nướng làm từ bánh mì sourdough ngon đúng nghĩa\" không? Có hả? Vậy thì đến đây đi.",
+      "Chủ quán từng làm ở một tiệm bánh ở New Zealand nên anh ấy biết rõ Sapporo đang thiếu gì: bánh mì cứng, chuẩn vị, kiểu sourdough, mà ở đây lại khó tìm đến bất ngờ. Anh ấy làm cà phê cũng nghiêm túc không kém, và cà phê thì xuất sắc thật sự. Nhân viên ai cũng thân thiện, chủ quán nói tiếng Anh tốt. Một thứ mình nhớ khi sống ở Nhật là được tám chuyện thoải mái với barista, và ở đây bạn làm được, miễn là đừng quá đáng. Trẻ con và chó cưng cũng được chào đón.",
+      "Cảnh báo một câu: sandwich nướng thường hết sạch trước 1 hay 2 giờ chiều. Hãy ghé đây đầu tiên trong ngày, đừng coi nó là phương án dự phòng buổi chiều."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-15T09:31:34.111Z"
+  },
+  "09a7c7f4b8ee3c8e": {
+    "en": [
+      "Not many people know about this place, which is a shame, because it does some of the best sashimi and seafood you'll find. The shellfish soup is ridiculously good too. Have it in winter when you're frozen through and it sinks right into you.",
+      "The deep-fried salmon is probably unlike anything you've had before. They also do zangi, Hokkaido's take on fried chicken, plus a few other Hokkaido classics. For drinks there's a good selection of sake and shochu.",
+      "Two things to know before you go. It's a small place, so book ahead. And smoking is allowed, so keep that in mind if it bothers you."
+    ],
+    "ko": [
+      "아는 사람이 별로 없는 곳인데, 진짜 아쉬워요. 여기 회랑 해산물이 정말 최고 수준이거든요. 조개 수프도 말도 안 되게 맛있어요. 몸이 꽁꽁 얼어붙은 겨울에 드셔 보세요. 속까지 쫙 스며들어요.",
+      "여기 연어튀김은 아마 지금까지 먹어본 어떤 음식과도 다를 거예요. 홋카이도식 프라이드치킨인 잔기도 있고, 다른 홋카이도 대표 요리도 몇 가지 있어요. 술은 사케와 소주 종류가 꽤 괜찮아요.",
+      "가기 전에 알아둘 게 두 가지 있어요. 가게가 작으니까 꼭 미리 예약하세요. 그리고 흡연이 가능해서, 담배 연기가 신경 쓰이시는 분은 참고하세요."
+    ],
+    "zh": [
+      "知道这家店的人不多，真的很可惜，因为他家的刺身和海鲜绝对是top级别的。贝类汤也好喝得离谱。冬天冻透了的时候来一碗，那种暖意会一直渗到心里。",
+      "这里的炸三文鱼，你以前八成没吃过类似的。他们家还有zangi，也就是北海道版的炸鸡，另外还有几道北海道经典菜。酒水方面，清酒和烧酒的选择都不错。",
+      "去之前有两件事要知道。第一，店很小，一定要提前预约。第二，店内可以吸烟，如果你介意烟味，就要考虑一下。"
+    ],
+    "th": [
+      "ร้านนี้คนรู้จักไม่เยอะเลย น่าเสียดายมาก เพราะซาชิมิกับอาหารทะเลที่นี่อร่อยติดระดับท็อปเลยครับ ซุปหอยก็อร่อยแบบเกินเบอร์ ลองกินตอนหน้าหนาวที่ตัวเย็นไปหมด รับรองว่าซึมลงไปถึงข้างในเลย",
+      "แซลมอนทอดของที่นี่น่าจะไม่เหมือนอะไรที่คุณเคยกินมาก่อน นอกจากนี้ยังมี zangi ไก่ทอดสไตล์ฮอกไกโด และเมนูเด็ดของฮอกไกโดอีกสองสามอย่าง ส่วนเครื่องดื่มก็มีสาเกกับโชจูให้เลือกดีทีเดียว",
+      "มีสองเรื่องที่ควรรู้ก่อนไป ร้านเล็กนะครับ เลยต้องจองล่วงหน้า และในร้านสูบบุหรี่ได้ ถ้าคุณไม่ชอบกลิ่นบุหรี่ก็ลองคิดดูก่อนนะ"
+    ],
+    "vi": [
+      "Chỗ này ít người biết lắm, tiếc thật, vì sashimi với hải sản ở đây thuộc hàng ngon nhất bạn có thể tìm được. Món súp sò ốc cũng ngon đến mức vô lý luôn. Hãy thử vào mùa đông, lúc bạn lạnh cóng, nó ngấm vào tận người luôn.",
+      "Món cá hồi chiên giòn ở đây chắc là không giống bất cứ thứ gì bạn từng ăn. Quán còn có zangi, kiểu gà rán của Hokkaido, và vài món kinh điển khác của vùng này nữa. Đồ uống thì có khá nhiều loại sake và shochu ngon.",
+      "Có hai điều bạn nên biết trước khi đi. Quán nhỏ nên nhớ đặt bàn trước. Với lại quán cho phép hút thuốc, nên nếu bạn thấy phiền thì cân nhắc nhé."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-15T09:31:45.932Z"
+  },
+  "8564ad502b132441": {
+    "en": [
+      "The yakisoba here is quite ordinary, and I'm not going to dress that up. So why is it on the list? Because it's so ordinary I keep wanting to go back, again and again. Exceptionally ordinary food is sometimes the best kind. It's also cheap as, which helps.",
+      "Eating here does take a bit of planning. It's only open for a short window around lunchtime on weekdays and Saturdays, so you can't just wander in whenever you fancy. It's a bit off the centre, and it's always busy with salarymen, so don't expect a quiet, leisurely lunch. Cash only, so come prepared.",
+      "If you're after something exciting, look elsewhere. If you want a plate you'll keep coming back for, this is it."
+    ],
+    "ko": [
+      "여기 야키소바는 솔직히 평범해요. 괜히 포장하진 않을게요. 그런데 왜 리스트에 있냐고요? 너무 평범해서 자꾸자꾸 또 가고 싶어지거든요. 엄청나게 평범한 음식이 가끔은 최고일 때가 있어요. 게다가 엄청 싸서 더 좋고요.",
+      "여기서 먹으려면 계획이 좀 필요해요. 평일이랑 토요일 점심시간 즈음에만 짧게 열어서, 내킬 때 불쑥 들어갈 수는 없어요. 중심가에서 좀 떨어져 있고, 늘 직장인 손님들로 북적여서 조용하고 여유로운 점심은 기대하지 마세요. 현금만 받으니까 꼭 준비해서 오세요.",
+      "자극적이고 특별한 걸 찾는다면 다른 데로 가세요. 계속 생각나는 한 접시를 찾는다면, 바로 여기예요."
+    ],
+    "zh": [
+      "这家的炒面说实话真的很普通，我也不想硬往上面贴金。那为什么还会上榜呢？因为它普通得让我一次又一次地想回去。普通到极致的东西，有时候反而是最好的。而且价格便宜得离谱，这也加分不少。",
+      "想在这里吃饭，得稍微计划一下。店只在工作日和周六的午饭时段营业很短的一段时间，所以不能想来就来。位置离市中心有点远，而且总是挤满了上班族，别指望能安安静静、慢悠悠地吃顿午饭。只收现金，记得提前准备好。",
+      "如果你想找刺激、有惊喜的，那请去别家。如果你想要一盘会让你一直惦记着回来吃的，那就是这家了。"
+    ],
+    "th": [
+      "ยากิโซบะที่นี่ธรรมดามากครับ ผมไม่อยากจะแต่งเติมให้ดูดีเกินจริง แล้วทำไมถึงอยู่ในลิสต์ล่ะ? ก็เพราะมันธรรมดาจนผมอยากกลับไปกินซ้ำแล้วซ้ำอีกนี่แหละ อาหารที่ธรรมดาแบบสุดๆ บางทีก็คือที่สุดของที่สุดเลย แถมถูกมากด้วย ยิ่งดีเข้าไปใหญ่",
+      "การจะมากินที่นี่ต้องวางแผนนิดหน่อยนะ ร้านเปิดแค่ช่วงสั้นๆ แถวเที่ยงวันธรรมดากับวันเสาร์ เพราะฉะนั้นจะเดินเข้าไปตอนไหนก็ได้ตามใจไม่ได้ ร้านอยู่ห่างจากใจกลางเมืองหน่อย แล้วก็มีพนักงานออฟฟิศมานั่งกินแน่นตลอด อย่าหวังว่าจะได้กินมื้อเที่ยงแบบเงียบๆ สบายๆ นะ รับแต่เงินสดเท่านั้น เตรียมมาให้พร้อมด้วย",
+      "ถ้าอยากได้อะไรตื่นเต้นเร้าใจ ไปหาที่อื่นเถอะ แต่ถ้าอยากได้จานที่กินแล้วต้องกลับมากินอีก ที่นี่แหละครับ"
+    ],
+    "vi": [
+      "Món yakisoba ở đây thật ra khá bình thường, mình cũng không định nói quá lên đâu. Vậy sao lại có tên trong danh sách? Vì nó bình thường đến mức mình cứ muốn quay lại hoài. Đồ ăn bình thường một cách xuất sắc đôi khi lại là ngon nhất. Mà giá còn rẻ bèo nữa, càng thích.",
+      "Muốn ăn ở đây thì phải lên kế hoạch một chút. Quán chỉ mở một khoảng ngắn quanh giờ trưa các ngày trong tuần và thứ Bảy, nên bạn không thể thích là ghé vào được. Quán nằm hơi xa trung tâm, lúc nào cũng đông dân văn phòng, nên đừng mong có bữa trưa yên tĩnh, thong thả. Chỉ nhận tiền mặt, nhớ chuẩn bị sẵn nhé.",
+      "Nếu bạn muốn tìm thứ gì đó thật mới lạ, thú vị thì qua chỗ khác đi. Còn nếu bạn muốn một đĩa ăn xong là cứ muốn quay lại, thì chính là chỗ này."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-15T09:31:59.989Z"
+  },
+  "db8a55b5af6f832f": {
+    "en": [
+      "As far as I'm concerned, this is the best jingisukan in Sapporo. Not one of the best. The best. It's in a really old building, and inside it's properly smoky. The whole place smells exactly like jingisukan, which is either a warning or a selling point depending on who you are.",
+      "The menu barely bothers. There's one option for meat, and everything else is veg. That sounds limited until you taste the meat, which is exceptional. Meat and veg is all you need here. Some would say beer belongs on that list too, and I'm not going to argue. Get in early enough (before 8pm, I think) and they also do five to eight izakaya dishes. Nice to have, but honestly you're here for the meat and veg.",
+      "Practical bits: it's cash only and very, very popular. If you want a table at the weekend, book at least two weeks ahead."
+    ],
+    "ko": [
+      "제 기준에서는 여기가 삿포로 최고의 징기스칸이에요. 최고 중 하나가 아니라, 그냥 최고예요. 아주 오래된 건물에 있고, 안은 진짜 연기가 자욱해요. 가게 전체에서 딱 징기스칸 냄새가 나는데, 사람에 따라 경고가 될 수도 있고 매력 포인트가 될 수도 있어요.",
+      "메뉴는 거의 신경을 안 써요. 고기는 한 종류뿐이고, 나머지는 전부 채소예요. 좀 단출하게 들리지만 고기를 먹어 보면 생각이 달라져요. 정말 끝내주거든요. 여기선 고기랑 채소면 충분해요. 거기에 맥주도 넣어야 한다는 사람도 있을 텐데, 저도 반박은 안 할게요. 일찍 가면(제 기억엔 저녁 8시 전) 이자카야 요리도 다섯에서 여덟 가지 정도 나와요. 있으면 좋긴 한데, 솔직히 여기는 고기랑 채소 먹으러 오는 곳이에요.",
+      "실용 정보예요. 현금만 받고, 인기가 엄청나게 많아요. 주말에 자리를 잡고 싶으면 최소 2주 전에는 예약하세요."
+    ],
+    "zh": [
+      "在我看来，这家就是札幌最好吃的成吉思汗烤肉。不是之一，就是最好。店开在一栋很老的楼里，里面烟雾缭绕，味道特别足。整家店闻起来就是纯正的成吉思汗烤肉味，这到底是劝退还是加分，就看你是哪种人了。",
+      "菜单基本懒得多写。肉只有一种，其他全是蔬菜。听起来很单调，但等你尝到这肉就知道了，真的绝。在这儿，有肉有菜就够了。有人会说还得加上啤酒，我也不想反驳。去得够早的话（我记得是晚上八点前），他们还有五到八道居酒屋小菜。有当然好，但说实话，你来这儿就是为了吃肉和蔬菜。",
+      "实用信息：只收现金，而且人气非常非常高。想订周末的位子，至少提前两周预约。"
+    ],
+    "th": [
+      "ในความเห็นผม ร้านนี้คือจิงกิสข่านที่อร่อยที่สุดในซัปโปโร ไม่ใช่หนึ่งในที่อร่อยที่สุดนะ แต่คืออร่อยที่สุดเลย ร้านอยู่ในตึกเก่ามากๆ ข้างในควันโขมงสุดๆ ทั้งร้านกลิ่นจิงกิสข่านเป๊ะๆ ซึ่งจะเป็นคำเตือนหรือจุดขายก็แล้วแต่ว่าคุณเป็นคนแบบไหน",
+      "เมนูแทบไม่พยายามอะไรเลย เนื้อมีให้เลือกอย่างเดียว ที่เหลือเป็นผักหมด ฟังดูมีตัวเลือกน้อย แต่พอได้ลองเนื้อแล้วจะเข้าใจ เพราะมันยอดเยี่ยมมาก ที่นี่แค่เนื้อกับผักก็พอแล้ว บางคนบอกว่าต้องมีเบียร์ด้วย ผมก็ไม่เถียงครับ ถ้ามาเร็วพอ (ผมว่าก่อนสองทุ่ม) ทางร้านยังมีอาหารแนวอิซากายะห้าถึงแปดอย่างด้วย ก็ดีที่มี แต่บอกตรงๆ คุณมาที่นี่เพื่อเนื้อกับผักอยู่แล้ว",
+      "ข้อมูลที่ต้องรู้: รับเงินสดอย่างเดียว และคนเยอะมากๆ ถ้าอยากได้โต๊ะวันสุดสัปดาห์ ต้องจองล่วงหน้าอย่างน้อยสองสัปดาห์"
+    ],
+    "vi": [
+      "Theo mình thì đây là quán jingisukan ngon nhất Sapporo. Không phải một trong những quán ngon nhất đâu, mà là ngon nhất luôn. Quán nằm trong một tòa nhà rất cũ, bên trong khói mù mịt đúng nghĩa. Cả quán thơm mùi jingisukan chuẩn không cần chỉnh, tùy bạn mà đó là lời cảnh báo hay điểm cộng.",
+      "Thực đơn gần như chẳng cố gắng gì cả. Thịt chỉ có một loại, còn lại toàn rau. Nghe thì có vẻ ít lựa chọn, nhưng đến khi bạn nếm thử thịt thì sẽ hiểu, vì nó ngon xuất sắc. Ở đây có thịt với rau là đủ rồi. Có người bảo phải thêm bia nữa, mình cũng không cãi. Nếu đến đủ sớm (mình nhớ là trước 8 giờ tối) thì quán còn có thêm năm đến tám món kiểu izakaya. Có thì tốt, nhưng thật lòng thì bạn đến đây là vì thịt với rau thôi.",
+      "Thông tin thực tế: quán chỉ nhận tiền mặt và cực kỳ đông khách. Nếu muốn có bàn vào cuối tuần, hãy đặt trước ít nhất hai tuần."
+    ],
+    "model": "claude-sonnet-5-5",
+    "at": "2026-11-15T09:32:16.633Z"
   }
 }
